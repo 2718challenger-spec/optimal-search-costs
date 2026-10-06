@@ -1,0 +1,7474 @@
+{
+  "domain": {
+    "j_min": 1,
+    "j_max": 2047,
+    "k_min": 1,
+    "k_max": 9
+  },
+  "arithmetic": "exact integers and reduced rational numbers",
+  "baseline": "floor((left+right)/2), successful final query charged",
+  "tie_break": "minimum total query count, then smallest root recursively",
+  "validations": {
+    "all_shapes_up_to_j": 8,
+    "tree_count_at_j8": 1430,
+    "all_rows_polynomial_identity": true,
+    "max_polynomial_partial_bits": 120
+  },
+  "statistics": [
+    {
+      "k": 1,
+      "maximum_j": 5,
+      "maximum_rate": "1/32",
+      "equality_j": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        14,
+        15,
+        30,
+        62,
+        126,
+        254
+      ],
+      "adjacent_increases": 1059,
+      "adjacent_decreases": 982
+    },
+    {
+      "k": 2,
+      "maximum_j": 3,
+      "maximum_rate": "1/11",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1211,
+      "adjacent_decreases": 834
+    },
+    {
+      "k": 3,
+      "maximum_j": 3,
+      "maximum_rate": "3/26",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1358,
+      "adjacent_decreases": 687
+    },
+    {
+      "k": 4,
+      "maximum_j": 3,
+      "maximum_rate": "7/65",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1484,
+      "adjacent_decreases": 561
+    },
+    {
+      "k": 5,
+      "maximum_j": 3,
+      "maximum_rate": "3/34",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1572,
+      "adjacent_decreases": 473
+    },
+    {
+      "k": 6,
+      "maximum_j": 6,
+      "maximum_rate": "1233/14581",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1635,
+      "adjacent_decreases": 410
+    },
+    {
+      "k": 7,
+      "maximum_j": 6,
+      "maximum_rate": "49215/543947",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1689,
+      "adjacent_decreases": 356
+    },
+    {
+      "k": 8,
+      "maximum_j": 6,
+      "maximum_rate": "271647/2956651",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1460,
+      "adjacent_decreases": 585
+    },
+    {
+      "k": 9,
+      "maximum_j": 7,
+      "maximum_rate": "1719401/18599012",
+      "equality_j": [
+        1,
+        2
+      ],
+      "adjacent_increases": 1002,
+      "adjacent_decreases": 1043
+    }
+  ],
+  "selected": [
+    {
+      "j": 3,
+      "k": 1,
+      "optimal_sum": "10",
+      "binary_sum": "10",
+      "root": 2,
+      "moments": [
+        "5",
+        "5"
+      ],
+      "optimal_expectation": "10/3",
+      "binary_expectation": "10/3",
+      "saving": "0",
+      "saving_rate": "0",
+      "polynomial_coefficients": [
+        "5",
+        "-5"
+      ],
+      "binary_moments": [
+        "5",
+        "5"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-5"
+      ],
+      "saving_polynomial_coefficients": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 2,
+      "optimal_sum": "20",
+      "binary_sum": "22",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14"
+      ],
+      "optimal_expectation": "20/3",
+      "binary_expectation": "22/3",
+      "saving": "2/3",
+      "saving_rate": "1/11",
+      "polynomial_coefficients": [
+        "6",
+        "-16",
+        "14"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-10",
+        "7"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "6",
+        "-7"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 3,
+      "optimal_sum": "46",
+      "binary_sum": "52",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26"
+      ],
+      "optimal_expectation": "46/3",
+      "binary_expectation": "52/3",
+      "saving": "2",
+      "saving_rate": "3/26",
+      "polynomial_coefficients": [
+        "6",
+        "-24",
+        "42",
+        "-26"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-15",
+        "21",
+        "-11"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "9",
+        "-21",
+        "15"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 4,
+      "optimal_sum": "116",
+      "binary_sum": "130",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26",
+        "50"
+      ],
+      "optimal_expectation": "116/3",
+      "binary_expectation": "130/3",
+      "saving": "14/3",
+      "saving_rate": "7/65",
+      "polynomial_coefficients": [
+        "6",
+        "-32",
+        "84",
+        "-104",
+        "50"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11",
+        "19"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-20",
+        "42",
+        "-44",
+        "19"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "12",
+        "-42",
+        "60",
+        "-31"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 5,
+      "optimal_sum": "310",
+      "binary_sum": "340",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26",
+        "50",
+        "98"
+      ],
+      "optimal_expectation": "310/3",
+      "binary_expectation": "340/3",
+      "saving": "10",
+      "saving_rate": "3/34",
+      "polynomial_coefficients": [
+        "6",
+        "-40",
+        "140",
+        "-260",
+        "250",
+        "-98"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11",
+        "19",
+        "35"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-25",
+        "70",
+        "-110",
+        "95",
+        "-35"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "15",
+        "-70",
+        "150",
+        "-155",
+        "63"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 6,
+      "optimal_sum": "860",
+      "binary_sum": "922",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26",
+        "50",
+        "98",
+        "194"
+      ],
+      "optimal_expectation": "860/3",
+      "binary_expectation": "922/3",
+      "saving": "62/3",
+      "saving_rate": "31/461",
+      "polynomial_coefficients": [
+        "6",
+        "-48",
+        "210",
+        "-520",
+        "750",
+        "-588",
+        "194"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11",
+        "19",
+        "35",
+        "67"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-30",
+        "105",
+        "-220",
+        "285",
+        "-210",
+        "67"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "18",
+        "-105",
+        "300",
+        "-465",
+        "378",
+        "-127"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 7,
+      "optimal_sum": "2446",
+      "binary_sum": "2572",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26",
+        "50",
+        "98",
+        "194",
+        "386"
+      ],
+      "optimal_expectation": "2446/3",
+      "binary_expectation": "2572/3",
+      "saving": "42",
+      "saving_rate": "63/1286",
+      "polynomial_coefficients": [
+        "6",
+        "-56",
+        "294",
+        "-910",
+        "1750",
+        "-2058",
+        "1358",
+        "-386"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11",
+        "19",
+        "35",
+        "67",
+        "131"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-35",
+        "147",
+        "-385",
+        "665",
+        "-735",
+        "469",
+        "-131"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "21",
+        "-147",
+        "525",
+        "-1085",
+        "1323",
+        "-889",
+        "255"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 8,
+      "optimal_sum": "7076",
+      "binary_sum": "7330",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26",
+        "50",
+        "98",
+        "194",
+        "386",
+        "770"
+      ],
+      "optimal_expectation": "7076/3",
+      "binary_expectation": "7330/3",
+      "saving": "254/3",
+      "saving_rate": "127/3665",
+      "polynomial_coefficients": [
+        "6",
+        "-64",
+        "392",
+        "-1456",
+        "3500",
+        "-5488",
+        "5432",
+        "-3088",
+        "770"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11",
+        "19",
+        "35",
+        "67",
+        "131",
+        "259"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-40",
+        "196",
+        "-616",
+        "1330",
+        "-1960",
+        "1876",
+        "-1048",
+        "259"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "24",
+        "-196",
+        "840",
+        "-2170",
+        "3528",
+        "-3556",
+        "2040",
+        "-511"
+      ]
+    },
+    {
+      "j": 3,
+      "k": 9,
+      "optimal_sum": "20710",
+      "binary_sum": "21220",
+      "root": 1,
+      "moments": [
+        "6",
+        "8",
+        "14",
+        "26",
+        "50",
+        "98",
+        "194",
+        "386",
+        "770",
+        "1538"
+      ],
+      "optimal_expectation": "20710/3",
+      "binary_expectation": "21220/3",
+      "saving": "170",
+      "saving_rate": "51/2122",
+      "polynomial_coefficients": [
+        "6",
+        "-72",
+        "504",
+        "-2184",
+        "6300",
+        "-12348",
+        "16296",
+        "-13896",
+        "6930",
+        "-1538"
+      ],
+      "binary_moments": [
+        "5",
+        "5",
+        "7",
+        "11",
+        "19",
+        "35",
+        "67",
+        "131",
+        "259",
+        "515"
+      ],
+      "binary_polynomial_coefficients": [
+        "5",
+        "-45",
+        "252",
+        "-924",
+        "2394",
+        "-4410",
+        "5628",
+        "-4716",
+        "2331",
+        "-515"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "27",
+        "-252",
+        "1260",
+        "-3906",
+        "7938",
+        "-10668",
+        "9180",
+        "-4599",
+        "1023"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 1,
+      "optimal_sum": "31",
+      "binary_sum": "32",
+      "root": 2,
+      "moments": [
+        "11",
+        "24"
+      ],
+      "optimal_expectation": "31/5",
+      "binary_expectation": "32/5",
+      "saving": "1/5",
+      "saving_rate": "1/32",
+      "polynomial_coefficients": [
+        "11",
+        "-24"
+      ],
+      "binary_moments": [
+        "11",
+        "23"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-23"
+      ],
+      "saving_polynomial_coefficients": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 2,
+      "optimal_sum": "102",
+      "binary_sum": "108",
+      "root": 1,
+      "moments": [
+        "13",
+        "33",
+        "107"
+      ],
+      "optimal_expectation": "102/5",
+      "binary_expectation": "108/5",
+      "saving": "6/5",
+      "saving_rate": "1/18",
+      "polynomial_coefficients": [
+        "13",
+        "-66",
+        "107"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-46",
+        "63"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2",
+        "20",
+        "-44"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 3,
+      "optimal_sum": "371",
+      "binary_sum": "398",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454"
+      ],
+      "optimal_expectation": "371/5",
+      "binary_expectation": "398/5",
+      "saving": "27/5",
+      "saving_rate": "27/398",
+      "polynomial_coefficients": [
+        "15",
+        "-120",
+        "390",
+        "-454"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-69",
+        "189",
+        "-197"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "51",
+        "-201",
+        "257"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 4,
+      "optimal_sum": "1449",
+      "binary_sum": "1560",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454",
+        "1654"
+      ],
+      "optimal_expectation": "1449/5",
+      "binary_expectation": "312",
+      "saving": "111/5",
+      "saving_rate": "37/520",
+      "polynomial_coefficients": [
+        "15",
+        "-160",
+        "780",
+        "-1816",
+        "1654"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197",
+        "675"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-92",
+        "378",
+        "-788",
+        "675"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "68",
+        "-402",
+        "1028",
+        "-979"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 5,
+      "optimal_sum": "6035",
+      "binary_sum": "6422",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454",
+        "1654",
+        "6190"
+      ],
+      "optimal_expectation": "1207",
+      "binary_expectation": "6422/5",
+      "saving": "387/5",
+      "saving_rate": "387/6422",
+      "polynomial_coefficients": [
+        "15",
+        "-200",
+        "1300",
+        "-4540",
+        "8270",
+        "-6190"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197",
+        "675",
+        "2453"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-115",
+        "630",
+        "-1970",
+        "3375",
+        "-2453"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "85",
+        "-670",
+        "2570",
+        "-4895",
+        "3737"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 6,
+      "optimal_sum": "26265",
+      "binary_sum": "27528",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454",
+        "1654",
+        "6190",
+        "23590"
+      ],
+      "optimal_expectation": "5253",
+      "binary_expectation": "27528/5",
+      "saving": "1263/5",
+      "saving_rate": "421/9176",
+      "polynomial_coefficients": [
+        "15",
+        "-240",
+        "1950",
+        "-9080",
+        "24810",
+        "-37140",
+        "23590"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197",
+        "675",
+        "2453",
+        "9243"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-138",
+        "945",
+        "-3940",
+        "10125",
+        "-14718",
+        "9243"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "102",
+        "-1005",
+        "5140",
+        "-14685",
+        "22422",
+        "-14347"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 7,
+      "optimal_sum": "117971",
+      "binary_sum": "121958",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454",
+        "1654",
+        "6190",
+        "23590",
+        "91054"
+      ],
+      "optimal_expectation": "117971/5",
+      "binary_expectation": "121958/5",
+      "saving": "3987/5",
+      "saving_rate": "3987/121958",
+      "polynomial_coefficients": [
+        "15",
+        "-280",
+        "2730",
+        "-15890",
+        "57890",
+        "-129990",
+        "165130",
+        "-91054"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197",
+        "675",
+        "2453",
+        "9243",
+        "35597"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-161",
+        "1323",
+        "-6895",
+        "23625",
+        "-51513",
+        "64701",
+        "-35597"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "119",
+        "-1407",
+        "8995",
+        "-34265",
+        "78477",
+        "-100429",
+        "55457"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 8,
+      "optimal_sum": "542409",
+      "binary_sum": "554760",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454",
+        "1654",
+        "6190",
+        "23590",
+        "91054",
+        "354694"
+      ],
+      "optimal_expectation": "542409/5",
+      "binary_expectation": "110952",
+      "saving": "12351/5",
+      "saving_rate": "179/8040",
+      "polynomial_coefficients": [
+        "15",
+        "-320",
+        "3640",
+        "-25424",
+        "115780",
+        "-346640",
+        "660520",
+        "-728432",
+        "354694"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197",
+        "675",
+        "2453",
+        "9243",
+        "35597",
+        "138915"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-184",
+        "1764",
+        "-11032",
+        "47250",
+        "-137368",
+        "258804",
+        "-284776",
+        "138915"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "136",
+        "-1876",
+        "14392",
+        "-68530",
+        "209272",
+        "-401716",
+        "443656",
+        "-215779"
+      ]
+    },
+    {
+      "j": 5,
+      "k": 9,
+      "optimal_sum": "2538515",
+      "binary_sum": "2576342",
+      "root": 1,
+      "moments": [
+        "15",
+        "40",
+        "130",
+        "454",
+        "1654",
+        "6190",
+        "23590",
+        "91054",
+        "354694",
+        "1390990"
+      ],
+      "optimal_expectation": "507703",
+      "binary_expectation": "2576342/5",
+      "saving": "37827/5",
+      "saving_rate": "37827/2576342",
+      "polynomial_coefficients": [
+        "15",
+        "-360",
+        "4680",
+        "-38136",
+        "208404",
+        "-779940",
+        "1981560",
+        "-3277944",
+        "3192246",
+        "-1390990"
+      ],
+      "binary_moments": [
+        "11",
+        "23",
+        "63",
+        "197",
+        "675",
+        "2453",
+        "9243",
+        "35597",
+        "138915",
+        "546533"
+      ],
+      "binary_polynomial_coefficients": [
+        "11",
+        "-207",
+        "2268",
+        "-16548",
+        "85050",
+        "-309078",
+        "776412",
+        "-1281492",
+        "1250235",
+        "-546533"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "153",
+        "-2412",
+        "21588",
+        "-123354",
+        "470862",
+        "-1205148",
+        "1996452",
+        "-1942011",
+        "844457"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 1,
+      "optimal_sum": "92",
+      "binary_sum": "93",
+      "root": 3,
+      "moments": [
+        "22",
+        "84"
+      ],
+      "optimal_expectation": "23/2",
+      "binary_expectation": "93/8",
+      "saving": "1/8",
+      "saving_rate": "1/93",
+      "polynomial_coefficients": [
+        "22",
+        "-84"
+      ],
+      "binary_moments": [
+        "21",
+        "75"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-75"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "9"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 2,
+      "optimal_sum": "463",
+      "binary_sum": "481",
+      "root": 1,
+      "moments": [
+        "27",
+        "121",
+        "671"
+      ],
+      "optimal_expectation": "463/8",
+      "binary_expectation": "481/8",
+      "saving": "9/4",
+      "saving_rate": "18/481",
+      "polynomial_coefficients": [
+        "27",
+        "-242",
+        "671"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-150",
+        "337"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6",
+        "92",
+        "-334"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 3,
+      "optimal_sum": "2651",
+      "binary_sum": "2751",
+      "root": 1,
+      "moments": [
+        "27",
+        "121",
+        "671",
+        "4045"
+      ],
+      "optimal_expectation": "2651/8",
+      "binary_expectation": "2751/8",
+      "saving": "25/2",
+      "saving_rate": "100/2751",
+      "polynomial_coefficients": [
+        "27",
+        "-363",
+        "2013",
+        "-4045"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-225",
+        "1011",
+        "-1689"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6",
+        "138",
+        "-1002",
+        "2356"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 4,
+      "optimal_sum": "16444",
+      "binary_sum": "16885",
+      "root": 1,
+      "moments": [
+        "30",
+        "140",
+        "792",
+        "4826",
+        "30588"
+      ],
+      "optimal_expectation": "4111/2",
+      "binary_expectation": "16885/8",
+      "saving": "441/8",
+      "saving_rate": "441/16885",
+      "polynomial_coefficients": [
+        "30",
+        "-560",
+        "4752",
+        "-19304",
+        "30588"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689",
+        "9109"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-300",
+        "2022",
+        "-6756",
+        "9109"
+      ],
+      "saving_polynomial_coefficients": [
+        "-9",
+        "260",
+        "-2730",
+        "12548",
+        "-21479"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 5,
+      "optimal_sum": "107230",
+      "binary_sum": "109143",
+      "root": 1,
+      "moments": [
+        "30",
+        "140",
+        "792",
+        "4826",
+        "30588",
+        "198530"
+      ],
+      "optimal_expectation": "53615/4",
+      "binary_expectation": "109143/8",
+      "saving": "1913/8",
+      "saving_rate": "1913/109143",
+      "polynomial_coefficients": [
+        "30",
+        "-700",
+        "7920",
+        "-48260",
+        "152940",
+        "-198530"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689",
+        "9109",
+        "51825"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-375",
+        "3370",
+        "-16890",
+        "45545",
+        "-51825"
+      ],
+      "saving_polynomial_coefficients": [
+        "-9",
+        "325",
+        "-4550",
+        "31370",
+        "-107395",
+        "146705"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 6,
+      "optimal_sum": "724461",
+      "binary_sum": "733381",
+      "root": 1,
+      "moments": [
+        "33",
+        "155",
+        "869",
+        "5231",
+        "32741",
+        "209975",
+        "1369469"
+      ],
+      "optimal_expectation": "724461/8",
+      "binary_expectation": "733381/8",
+      "saving": "1115",
+      "saving_rate": "8920/733381",
+      "polynomial_coefficients": [
+        "33",
+        "-930",
+        "13035",
+        "-104620",
+        "491115",
+        "-1259850",
+        "1369469"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689",
+        "9109",
+        "51825",
+        "306997"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-450",
+        "5055",
+        "-33780",
+        "136635",
+        "-310950",
+        "306997"
+      ],
+      "saving_polynomial_coefficients": [
+        "-12",
+        "480",
+        "-7980",
+        "70840",
+        "-354480",
+        "948900",
+        "-1062472"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 7,
+      "optimal_sum": "4992492",
+      "binary_sum": "5075751",
+      "root": 1,
+      "moments": [
+        "36",
+        "168",
+        "924",
+        "5460",
+        "33684",
+        "213828",
+        "1385124",
+        "9107700"
+      ],
+      "optimal_expectation": "1248123/2",
+      "binary_expectation": "5075751/8",
+      "saving": "83259/8",
+      "saving_rate": "27753/1691917",
+      "polynomial_coefficients": [
+        "36",
+        "-1176",
+        "19404",
+        "-191100",
+        "1178940",
+        "-4490388",
+        "9695868",
+        "-9107700"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689",
+        "9109",
+        "51825",
+        "306997",
+        "1875249"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-525",
+        "7077",
+        "-59115",
+        "318815",
+        "-1088325",
+        "2148979",
+        "-1875249"
+      ],
+      "saving_polynomial_coefficients": [
+        "-15",
+        "651",
+        "-12327",
+        "131985",
+        "-860125",
+        "3402063",
+        "-7546889",
+        "7232451"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 8,
+      "optimal_sum": "35277012",
+      "binary_sum": "35947525",
+      "root": 1,
+      "moments": [
+        "36",
+        "168",
+        "924",
+        "5460",
+        "33684",
+        "213828",
+        "1385124",
+        "9107700",
+        "60574164"
+      ],
+      "optimal_expectation": "8819253/2",
+      "binary_expectation": "35947525/8",
+      "saving": "670513/8",
+      "saving_rate": "670513/35947525",
+      "polynomial_coefficients": [
+        "36",
+        "-1344",
+        "25872",
+        "-305760",
+        "2357880",
+        "-11974368",
+        "38783472",
+        "-72861600",
+        "60574164"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689",
+        "9109",
+        "51825",
+        "306997",
+        "1875249",
+        "11726149"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-600",
+        "9436",
+        "-94584",
+        "637630",
+        "-2902200",
+        "8595916",
+        "-15001992",
+        "11726149"
+      ],
+      "saving_polynomial_coefficients": [
+        "-15",
+        "744",
+        "-16436",
+        "211176",
+        "-1720250",
+        "9072168",
+        "-30187556",
+        "57859608",
+        "-48848015"
+      ]
+    },
+    {
+      "j": 8,
+      "k": 9,
+      "optimal_sum": "254402940",
+      "binary_sum": "259307223",
+      "root": 1,
+      "moments": [
+        "36",
+        "168",
+        "924",
+        "5460",
+        "33684",
+        "213828",
+        "1385124",
+        "9107700",
+        "60574164",
+        "406482468"
+      ],
+      "optimal_expectation": "63600735/2",
+      "binary_expectation": "259307223/8",
+      "saving": "4904283/8",
+      "saving_rate": "1634761/86435741",
+      "polynomial_coefficients": [
+        "36",
+        "-1512",
+        "33264",
+        "-458640",
+        "4244184",
+        "-26942328",
+        "116350416",
+        "-327877200",
+        "545167476",
+        "-406482468"
+      ],
+      "binary_moments": [
+        "21",
+        "75",
+        "337",
+        "1689",
+        "9109",
+        "51825",
+        "306997",
+        "1875249",
+        "11726149",
+        "74658705"
+      ],
+      "binary_polynomial_coefficients": [
+        "21",
+        "-675",
+        "12132",
+        "-141876",
+        "1147734",
+        "-6529950",
+        "25787748",
+        "-67508964",
+        "105535341",
+        "-74658705"
+      ],
+      "saving_polynomial_coefficients": [
+        "-15",
+        "837",
+        "-21132",
+        "316764",
+        "-3096450",
+        "20412378",
+        "-90562668",
+        "260368236",
+        "-439632135",
+        "331823763"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 1,
+      "optimal_sum": "153",
+      "binary_sum": "156",
+      "root": 4,
+      "moments": [
+        "29",
+        "137"
+      ],
+      "optimal_expectation": "153/10",
+      "binary_expectation": "78/5",
+      "saving": "3/10",
+      "saving_rate": "1/52",
+      "polynomial_coefficients": [
+        "29",
+        "-137"
+      ],
+      "binary_moments": [
+        "29",
+        "134"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-134"
+      ],
+      "saving_polynomial_coefficients": [
+        "0",
+        "3"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 2,
+      "optimal_sum": "958",
+      "binary_sum": "1004",
+      "root": 1,
+      "moments": [
+        "36",
+        "204",
+        "1438"
+      ],
+      "optimal_expectation": "479/5",
+      "binary_expectation": "502/5",
+      "saving": "23/5",
+      "saving_rate": "23/502",
+      "polynomial_coefficients": [
+        "36",
+        "-408",
+        "1438"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-268",
+        "784"
+      ],
+      "saving_polynomial_coefficients": [
+        "-7",
+        "140",
+        "-654"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 3,
+      "optimal_sum": "6829",
+      "binary_sum": "7194",
+      "root": 2,
+      "moments": [
+        "33",
+        "173",
+        "1123",
+        "7961"
+      ],
+      "optimal_expectation": "6829/10",
+      "binary_expectation": "3597/5",
+      "saving": "73/2",
+      "saving_rate": "365/7194",
+      "polynomial_coefficients": [
+        "33",
+        "-519",
+        "3369",
+        "-7961"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-402",
+        "2352",
+        "-5126"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4",
+        "117",
+        "-1017",
+        "2835"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 4,
+      "optimal_sum": "52466",
+      "binary_sum": "55328",
+      "root": 1,
+      "moments": [
+        "39",
+        "226",
+        "1594",
+        "12190",
+        "97666"
+      ],
+      "optimal_expectation": "26233/5",
+      "binary_expectation": "27664/5",
+      "saving": "1431/5",
+      "saving_rate": "1431/27664",
+      "polynomial_coefficients": [
+        "39",
+        "-904",
+        "9564",
+        "-48760",
+        "97666"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126",
+        "35968"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-536",
+        "4704",
+        "-20504",
+        "35968"
+      ],
+      "saving_polynomial_coefficients": [
+        "-10",
+        "368",
+        "-4860",
+        "28256",
+        "-61698"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 5,
+      "optimal_sum": "424491",
+      "binary_sum": "447186",
+      "root": 1,
+      "moments": [
+        "43",
+        "259",
+        "1871",
+        "14539",
+        "117551",
+        "974059"
+      ],
+      "optimal_expectation": "424491/10",
+      "binary_expectation": "223593/5",
+      "saving": "4539/2",
+      "saving_rate": "7565/149062",
+      "polynomial_coefficients": [
+        "43",
+        "-1295",
+        "18710",
+        "-145390",
+        "587755",
+        "-974059"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126",
+        "35968",
+        "265214"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-670",
+        "7840",
+        "-51260",
+        "179840",
+        "-265214"
+      ],
+      "saving_polynomial_coefficients": [
+        "-14",
+        "625",
+        "-10870",
+        "94130",
+        "-407915",
+        "708845"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 6,
+      "optimal_sum": "3558751",
+      "binary_sum": "3746624",
+      "root": 1,
+      "moments": [
+        "43",
+        "259",
+        "1871",
+        "14539",
+        "117551",
+        "974059",
+        "8205791"
+      ],
+      "optimal_expectation": "3558751/10",
+      "binary_expectation": "1873312/5",
+      "saving": "187873/10",
+      "saving_rate": "26839/535232",
+      "polynomial_coefficients": [
+        "43",
+        "-1554",
+        "28065",
+        "-290780",
+        "1763265",
+        "-5844354",
+        "8205791"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126",
+        "35968",
+        "265214",
+        "2027464"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-804",
+        "11760",
+        "-102520",
+        "539520",
+        "-1591284",
+        "2027464"
+      ],
+      "saving_polynomial_coefficients": [
+        "-14",
+        "750",
+        "-16305",
+        "188260",
+        "-1223745",
+        "4253070",
+        "-6178327"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 7,
+      "optimal_sum": "30669176",
+      "binary_sum": "32237634",
+      "root": 1,
+      "moments": [
+        "49",
+        "302",
+        "2178",
+        "16724",
+        "133062",
+        "1083932",
+        "8982678",
+        "75431084"
+      ],
+      "optimal_expectation": "15334588/5",
+      "binary_expectation": "16118817/5",
+      "saving": "784229/5",
+      "saving_rate": "784229/16118817",
+      "polynomial_coefficients": [
+        "49",
+        "-2114",
+        "45738",
+        "-585340",
+        "4657170",
+        "-22762572",
+        "62878746",
+        "-75431084"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126",
+        "35968",
+        "265214",
+        "2027464",
+        "15915446"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-938",
+        "16464",
+        "-179410",
+        "1258880",
+        "-5569494",
+        "14192248",
+        "-15915446"
+      ],
+      "saving_polynomial_coefficients": [
+        "-20",
+        "1176",
+        "-29274",
+        "405930",
+        "-3398290",
+        "17193078",
+        "-48686498",
+        "59515638"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 8,
+      "optimal_sum": "269783424",
+      "binary_sum": "283089488",
+      "root": 1,
+      "moments": [
+        "47",
+        "286",
+        "2064",
+        "15958",
+        "128064",
+        "1051846",
+        "8778864",
+        "74146918",
+        "632093664"
+      ],
+      "optimal_expectation": "134891712/5",
+      "binary_expectation": "141544744/5",
+      "saving": "6653032/5",
+      "saving_rate": "831629/17693093",
+      "polynomial_coefficients": [
+        "47",
+        "-2288",
+        "57792",
+        "-893648",
+        "8964480",
+        "-58903376",
+        "245808192",
+        "-593175344",
+        "632093664"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126",
+        "35968",
+        "265214",
+        "2027464",
+        "15915446",
+        "127409968"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-1072",
+        "21952",
+        "-287056",
+        "2517760",
+        "-14851984",
+        "56768992",
+        "-127323568",
+        "127409968"
+      ],
+      "saving_polynomial_coefficients": [
+        "-18",
+        "1216",
+        "-35840",
+        "606592",
+        "-6446720",
+        "44051392",
+        "-189039200",
+        "465851776",
+        "-504683696"
+      ]
+    },
+    {
+      "j": 10,
+      "k": 9,
+      "optimal_sum": "2403012910",
+      "binary_sum": "2526273426",
+      "root": 1,
+      "moments": [
+        "55",
+        "330",
+        "2310",
+        "17358",
+        "136158",
+        "1099230",
+        "9058830",
+        "75811758",
+        "642036318",
+        "5488646910"
+      ],
+      "optimal_expectation": "240301291",
+      "binary_expectation": "1263136713/5",
+      "saving": "61630258/5",
+      "saving_rate": "61630258/1263136713",
+      "polynomial_coefficients": [
+        "55",
+        "-2970",
+        "83160",
+        "-1458072",
+        "17155908",
+        "-138502980",
+        "760941720",
+        "-2729223288",
+        "5778326862",
+        "-5488646910"
+      ],
+      "binary_moments": [
+        "29",
+        "134",
+        "784",
+        "5126",
+        "35968",
+        "265214",
+        "2027464",
+        "15915446",
+        "127409968",
+        "1035154094"
+      ],
+      "binary_polynomial_coefficients": [
+        "29",
+        "-1206",
+        "28224",
+        "-430584",
+        "4531968",
+        "-33416964",
+        "170306976",
+        "-572956056",
+        "1146689712",
+        "-1035154094"
+      ],
+      "saving_polynomial_coefficients": [
+        "-26",
+        "1764",
+        "-54936",
+        "1027488",
+        "-12623940",
+        "105086016",
+        "-590634744",
+        "2156267232",
+        "-4631637150",
+        "4453492816"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 1,
+      "optimal_sum": "2063",
+      "binary_sum": "2064",
+      "root": 10,
+      "moments": [
+        "136",
+        "2153"
+      ],
+      "optimal_expectation": "2063/31",
+      "binary_expectation": "2064/31",
+      "saving": "1/31",
+      "saving_rate": "1/2064",
+      "polynomial_coefficients": [
+        "136",
+        "-2153"
+      ],
+      "binary_moments": [
+        "129",
+        "1935"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-1935"
+      ],
+      "saving_polynomial_coefficients": [
+        "-7",
+        "218"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 2,
+      "optimal_sum": "39447",
+      "binary_sum": "40560",
+      "root": 2,
+      "moments": [
+        "159",
+        "2838",
+        "62604"
+      ],
+      "optimal_expectation": "39447/31",
+      "binary_expectation": "40560/31",
+      "saving": "1113/31",
+      "saving_rate": "371/13520",
+      "polynomial_coefficients": [
+        "159",
+        "-5676",
+        "62604"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-3870",
+        "36561"
+      ],
+      "saving_polynomial_coefficients": [
+        "-30",
+        "1806",
+        "-26043"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 3,
+      "optimal_sum": "860310",
+      "binary_sum": "890112",
+      "root": 1,
+      "moments": [
+        "180",
+        "3444",
+        "80168",
+        "2028642"
+      ],
+      "optimal_expectation": "860310/31",
+      "binary_expectation": "890112/31",
+      "saving": "29802/31",
+      "saving_rate": "4967/148352",
+      "polynomial_coefficients": [
+        "180",
+        "-10332",
+        "240504",
+        "-2028642"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-5805",
+        "109683",
+        "-774495"
+      ],
+      "saving_polynomial_coefficients": [
+        "-51",
+        "4527",
+        "-130821",
+        "1254147"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 4,
+      "optimal_sum": "20252383",
+      "binary_sum": "20951568",
+      "root": 2,
+      "moments": [
+        "173",
+        "3196",
+        "71758",
+        "1751608",
+        "44774158"
+      ],
+      "optimal_expectation": "20252383/31",
+      "binary_expectation": "20951568/31",
+      "saving": "699185/31",
+      "saving_rate": "699185/20951568",
+      "polynomial_coefficients": [
+        "173",
+        "-12784",
+        "430548",
+        "-7006432",
+        "44774158"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495",
+        "17626353"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-7740",
+        "219366",
+        "-3097980",
+        "17626353"
+      ],
+      "saving_polynomial_coefficients": [
+        "-44",
+        "5044",
+        "-211182",
+        "3908452",
+        "-27147805"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 5,
+      "optimal_sum": "500732353",
+      "binary_sum": "517711104",
+      "root": 1,
+      "moments": [
+        "221",
+        "4558",
+        "110728",
+        "2875000",
+        "77355052",
+        "2127527968"
+      ],
+      "optimal_expectation": "500732353/31",
+      "binary_expectation": "517711104/31",
+      "saving": "16978751/31",
+      "saving_rate": "16978751/517711104",
+      "polynomial_coefficients": [
+        "221",
+        "-22790",
+        "1107280",
+        "-28750000",
+        "386775260",
+        "-2127527968"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495",
+        "17626353",
+        "421458975"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-9675",
+        "365610",
+        "-7744950",
+        "88131765",
+        "-421458975"
+      ],
+      "saving_polynomial_coefficients": [
+        "-92",
+        "13115",
+        "-741670",
+        "21005050",
+        "-298643495",
+        "1706068993"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 6,
+      "optimal_sum": "12793717614",
+      "binary_sum": "13251913680",
+      "root": 1,
+      "moments": [
+        "231",
+        "4779",
+        "115761",
+        "2992695",
+        "80150217",
+        "2194535319",
+        "61002652041"
+      ],
+      "optimal_expectation": "12793717614/31",
+      "binary_expectation": "13251913680/31",
+      "saving": "458196066/31",
+      "saving_rate": "76366011/2208652280",
+      "polynomial_coefficients": [
+        "231",
+        "-28674",
+        "1736415",
+        "-59853900",
+        "1202253255",
+        "-13167211914",
+        "61002652041"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495",
+        "17626353",
+        "421458975",
+        "10442714481"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-11610",
+        "548415",
+        "-15489900",
+        "264395295",
+        "-2528753850",
+        "10442714481"
+      ],
+      "saving_polynomial_coefficients": [
+        "-102",
+        "17064",
+        "-1188000",
+        "44364000",
+        "-937857960",
+        "10638458064",
+        "-50559937560"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 7,
+      "optimal_sum": "335681711262",
+      "binary_sum": "348278975232",
+      "root": 1,
+      "moments": [
+        "231",
+        "4779",
+        "115761",
+        "2992695",
+        "80150217",
+        "2194535319",
+        "61002652041",
+        "1714497099495"
+      ],
+      "optimal_expectation": "335681711262/31",
+      "binary_expectation": "348278975232/31",
+      "saving": "12597263970/31",
+      "saving_rate": "2099543995/58046495872",
+      "polynomial_coefficients": [
+        "231",
+        "-33453",
+        "2430981",
+        "-104744325",
+        "2805257595",
+        "-46085241699",
+        "427018564287",
+        "-1714497099495"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495",
+        "17626353",
+        "421458975",
+        "10442714481",
+        "265684524255"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-13545",
+        "767781",
+        "-27107325",
+        "616922355",
+        "-8850638475",
+        "73099001367",
+        "-265684524255"
+      ],
+      "saving_polynomial_coefficients": [
+        "-102",
+        "19908",
+        "-1663200",
+        "77637000",
+        "-2188335240",
+        "37234603224",
+        "-353919562920",
+        "1448812575240"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 8,
+      "optimal_sum": "8990466804010",
+      "binary_sum": "9340441010448",
+      "root": 1,
+      "moments": [
+        "246",
+        "5120",
+        "123740",
+        "3183776",
+        "84805628",
+        "2309363000",
+        "63859739060",
+        "1786027448096",
+        "50390725395788"
+      ],
+      "optimal_expectation": "8990466804010/31",
+      "binary_expectation": "9340441010448/31",
+      "saving": "349974206438/31",
+      "saving_rate": "174987103219/4670220505224",
+      "polynomial_coefficients": [
+        "246",
+        "-40960",
+        "3464720",
+        "-178291456",
+        "5936393960",
+        "-129324328000",
+        "1788072693680",
+        "-14288219584768",
+        "50390725395788"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495",
+        "17626353",
+        "421458975",
+        "10442714481",
+        "265684524255",
+        "6897688852593"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-15480",
+        "1023708",
+        "-43371720",
+        "1233844710",
+        "-23601702600",
+        "292396005468",
+        "-2125476194040",
+        "6897688852593"
+      ],
+      "saving_polynomial_coefficients": [
+        "-117",
+        "25480",
+        "-2441012",
+        "134919736",
+        "-4702549250",
+        "105722625400",
+        "-1495676688212",
+        "12162743390728",
+        "-43493036543195"
+      ]
+    },
+    {
+      "j": 31,
+      "k": 9,
+      "optimal_sum": "244744608300286",
+      "binary_sum": "254523758778624",
+      "root": 1,
+      "moments": [
+        "246",
+        "5120",
+        "123740",
+        "3183776",
+        "84805628",
+        "2309363000",
+        "63859739060",
+        "1786027448096",
+        "50390725395788",
+        "1431672888344840"
+      ],
+      "optimal_expectation": "244744608300286/31",
+      "binary_expectation": "254523758778624/31",
+      "saving": "9779150478338/31",
+      "saving_rate": "4889575239169/127261879389312",
+      "polynomial_coefficients": [
+        "246",
+        "-46080",
+        "4454640",
+        "-267437184",
+        "10685509128",
+        "-290979738000",
+        "5364218081040",
+        "-64296988131456",
+        "453516528562092",
+        "-1431672888344840"
+      ],
+      "binary_moments": [
+        "129",
+        "1935",
+        "36561",
+        "774495",
+        "17626353",
+        "421458975",
+        "10442714481",
+        "265684524255",
+        "6897688852593",
+        "181947337073055"
+      ],
+      "binary_polynomial_coefficients": [
+        "129",
+        "-17415",
+        "1316196",
+        "-65057580",
+        "2220920478",
+        "-53103830850",
+        "877188016404",
+        "-9564642873180",
+        "62079199673337",
+        "-181947337073055"
+      ],
+      "saving_polynomial_coefficients": [
+        "-117",
+        "28665",
+        "-3138444",
+        "202379604",
+        "-8464588650",
+        "237875907150",
+        "-4487030064636",
+        "54732345258276",
+        "-391437328888755",
+        "1249725551271785"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 1,
+      "optimal_sum": "10268",
+      "binary_sum": "10272",
+      "root": 20,
+      "moments": [
+        "335",
+        "10837"
+      ],
+      "optimal_expectation": "10268/63",
+      "binary_expectation": "3424/21",
+      "saving": "4/63",
+      "saving_rate": "1/2568",
+      "polynomial_coefficients": [
+        "335",
+        "-10837"
+      ],
+      "binary_moments": [
+        "321",
+        "9951"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-9951"
+      ],
+      "saving_polynomial_coefficients": [
+        "-14",
+        "886"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 2,
+      "optimal_sum": "400918",
+      "binary_sum": "409824",
+      "root": 4,
+      "moments": [
+        "382",
+        "13686",
+        "609196"
+      ],
+      "optimal_expectation": "57274/9",
+      "binary_expectation": "45536/7",
+      "saving": "8906/63",
+      "saving_rate": "4453/204912",
+      "polynomial_coefficients": [
+        "382",
+        "-27372",
+        "609196"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-19902",
+        "389601"
+      ],
+      "saving_polynomial_coefficients": [
+        "-61",
+        "7470",
+        "-219595"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 3,
+      "optimal_sum": "17826274",
+      "binary_sum": "18306048",
+      "root": 2,
+      "moments": [
+        "424",
+        "16154",
+        "754560",
+        "38459816"
+      ],
+      "optimal_expectation": "17826274/63",
+      "binary_expectation": "6102016/21",
+      "saving": "479774/63",
+      "saving_rate": "239887/9153024",
+      "polynomial_coefficients": [
+        "424",
+        "-48462",
+        "2263680",
+        "-38459816"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-29853",
+        "1168803",
+        "-17107071"
+      ],
+      "saving_polynomial_coefficients": [
+        "-103",
+        "18609",
+        "-1094877",
+        "21352745"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 4,
+      "optimal_sum": "854111827",
+      "binary_sum": "876897312",
+      "root": 1,
+      "moments": [
+        "467",
+        "18604",
+        "895948",
+        "46733026",
+        "2545593472"
+      ],
+      "optimal_expectation": "854111827/63",
+      "binary_expectation": "292299104/21",
+      "saving": "22785485/63",
+      "saving_rate": "22785485/876897312",
+      "polynomial_coefficients": [
+        "467",
+        "-74416",
+        "5375688",
+        "-186932104",
+        "2545593472"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071",
+        "806091297"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-39804",
+        "2337606",
+        "-68428284",
+        "806091297"
+      ],
+      "saving_polynomial_coefficients": [
+        "-146",
+        "34612",
+        "-3038082",
+        "118503820",
+        "-1739502175"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 5,
+      "optimal_sum": "42936418161",
+      "binary_sum": "44056876032",
+      "root": 1,
+      "moments": [
+        "494",
+        "20031",
+        "973817",
+        "51093489",
+        "2793801893",
+        "156736637001"
+      ],
+      "optimal_expectation": "681530447",
+      "binary_expectation": "4895208448/7",
+      "saving": "124495319/7",
+      "saving_rate": "9576563/376554496",
+      "polynomial_coefficients": [
+        "494",
+        "-100155",
+        "9738170",
+        "-510934890",
+        "13969009465",
+        "-156736637001"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071",
+        "806091297",
+        "39851402751"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-49755",
+        "3896010",
+        "-171070710",
+        "4030456485",
+        "-39851402751"
+      ],
+      "saving_polynomial_coefficients": [
+        "-173",
+        "50400",
+        "-5842160",
+        "339864180",
+        "-9938552980",
+        "116885234250"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 6,
+      "optimal_sum": "2231718821532",
+      "binary_sum": "2290714398624",
+      "root": 1,
+      "moments": [
+        "540",
+        "22644",
+        "1123536",
+        "59736456",
+        "3295889664",
+        "186056204784",
+        "10667030786136"
+      ],
+      "optimal_expectation": "247968757948/7",
+      "binary_expectation": "763571466208/21",
+      "saving": "19665192364/21",
+      "saving_rate": "4916298091/190892866552",
+      "polynomial_coefficients": [
+        "540",
+        "-135864",
+        "16853040",
+        "-1194729120",
+        "49438344960",
+        "-1116337228704",
+        "10667030786136"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071",
+        "806091297",
+        "39851402751",
+        "2039166567201"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-59706",
+        "5844015",
+        "-342141420",
+        "12091369455",
+        "-239108416506",
+        "2039166567201"
+      ],
+      "saving_polynomial_coefficients": [
+        "-219",
+        "76158",
+        "-11009025",
+        "852587700",
+        "-37346975505",
+        "877228812198",
+        "-8627864218935"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 7,
+      "optimal_sum": "118959841857812",
+      "binary_sum": "122184847961088",
+      "root": 1,
+      "moments": [
+        "581",
+        "24895",
+        "1250357",
+        "67020763",
+        "3720241205",
+        "211042710355",
+        "12150475351517",
+        "707079152208523"
+      ],
+      "optimal_expectation": "118959841857812/63",
+      "binary_expectation": "40728282653696/21",
+      "saving": "3225006103276/63",
+      "saving_rate": "806251525819/30546211990272",
+      "polynomial_coefficients": [
+        "581",
+        "-174265",
+        "26257497",
+        "-2345726705",
+        "130208442175",
+        "-4431896917455",
+        "85053327460619",
+        "-707079152208523"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071",
+        "806091297",
+        "39851402751",
+        "2039166567201",
+        "107044982338431"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-69657",
+        "8181621",
+        "-598747485",
+        "28213195395",
+        "-836879457771",
+        "14274165970407",
+        "-107044982338431"
+      ],
+      "saving_polynomial_coefficients": [
+        "-260",
+        "104608",
+        "-18075876",
+        "1746979220",
+        "-101995246780",
+        "3595017459684",
+        "-70779161490212",
+        "600034169870092"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 8,
+      "optimal_sum": "6466763064031719",
+      "binary_sum": "6646099673367072",
+      "root": 1,
+      "moments": [
+        "572",
+        "24209",
+        "1202181",
+        "63770585",
+        "3505818645",
+        "197092400969",
+        "11251472509461",
+        "649547927787545",
+        "37820721609574485"
+      ],
+      "optimal_expectation": "2155587688010573/21",
+      "binary_expectation": "738455519263008/7",
+      "saving": "59778869778451/21",
+      "saving_rate": "59778869778451/2215366557789024",
+      "polynomial_coefficients": [
+        "572",
+        "-193672",
+        "33661068",
+        "-3571152760",
+        "245407305150",
+        "-11037174454264",
+        "315041230264908",
+        "-5196383422300360",
+        "37820721609574485"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071",
+        "806091297",
+        "39851402751",
+        "2039166567201",
+        "107044982338431",
+        "5730354076848417"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-79608",
+        "10908828",
+        "-957995976",
+        "56426390790",
+        "-2231678554056",
+        "57096663881628",
+        "-856359858707448",
+        "5730354076848417"
+      ],
+      "saving_polynomial_coefficients": [
+        "-251",
+        "114064",
+        "-22752240",
+        "2613156784",
+        "-188980914360",
+        "8805495900208",
+        "-257944566383280",
+        "4340023563592912",
+        "-32090367532726068"
+      ]
+    },
+    {
+      "j": 63,
+      "k": 9,
+      "optimal_sum": "356997765268618299",
+      "binary_sum": "367128338332541952",
+      "root": 1,
+      "moments": [
+        "603",
+        "25740",
+        "1281392",
+        "68010894",
+        "3738448004",
+        "210087270510",
+        "11987302400012",
+        "691647552561414",
+        "40248582284820644",
+        "2357991192146434110"
+      ],
+      "optimal_expectation": "5666631194739973",
+      "binary_expectation": "122376112777513984/21",
+      "saving": "3376857687974551/21",
+      "saving_rate": "3376857687974551/122376112777513984",
+      "polynomial_coefficients": [
+        "603",
+        "-231660",
+        "46130112",
+        "-5712915096",
+        "471044448504",
+        "-26470996084260",
+        "1006933401601008",
+        "-24899311892210904",
+        "362237240563385796",
+        "-2357991192146434110"
+      ],
+      "binary_moments": [
+        "321",
+        "9951",
+        "389601",
+        "17107071",
+        "806091297",
+        "39851402751",
+        "2039166567201",
+        "107044982338431",
+        "5730354076848417",
+        "311525117989718271"
+      ],
+      "binary_polynomial_coefficients": [
+        "321",
+        "-89559",
+        "14025636",
+        "-1436993964",
+        "101567503422",
+        "-5021276746626",
+        "171289991644884",
+        "-3853619364183516",
+        "51573186691635753",
+        "-311525117989718271"
+      ],
+      "saving_polynomial_coefficients": [
+        "-282",
+        "142101",
+        "-32104476",
+        "4275921132",
+        "-369476945082",
+        "21449719337634",
+        "-835643409956124",
+        "21045692528027388",
+        "-310664053871750043",
+        "2046466074156715839"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 1,
+      "optimal_sum": "28738",
+      "binary_sum": "29215",
+      "root": 38,
+      "moments": [
+        "585",
+        "29762"
+      ],
+      "optimal_expectation": "14369/50",
+      "binary_expectation": "5843/20",
+      "saving": "477/100",
+      "saving_rate": "477/29215",
+      "polynomial_coefficients": [
+        "585",
+        "-29762"
+      ],
+      "binary_moments": [
+        "580",
+        "28785"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-28785"
+      ],
+      "saving_polynomial_coefficients": [
+        "-5",
+        "977"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 2,
+      "optimal_sum": "1798665",
+      "binary_sum": "1851361",
+      "root": 1,
+      "moments": [
+        "723",
+        "43195",
+        "3207665"
+      ],
+      "optimal_expectation": "359733/20",
+      "binary_expectation": "1851361/100",
+      "saving": "13174/25",
+      "saving_rate": "52696/1851361",
+      "polynomial_coefficients": [
+        "723",
+        "-86390",
+        "3207665"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-57570",
+        "1808361"
+      ],
+      "saving_polynomial_coefficients": [
+        "-143",
+        "28820",
+        "-1399304"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 3,
+      "optimal_sum": "127417413",
+      "binary_sum": "131531167",
+      "root": 1,
+      "moments": [
+        "779",
+        "48227",
+        "3659169",
+        "302523287"
+      ],
+      "optimal_expectation": "127417413/100",
+      "binary_expectation": "131531167/100",
+      "saving": "2056877/50",
+      "saving_rate": "4113754/131531167",
+      "polynomial_coefficients": [
+        "779",
+        "-144681",
+        "10977507",
+        "-302523287"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-86355",
+        "5425083",
+        "-127427133"
+      ],
+      "saving_polynomial_coefficients": [
+        "-199",
+        "58326",
+        "-5552424",
+        "175096154"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 4,
+      "optimal_sum": "9712607419",
+      "binary_sum": "10020524953",
+      "root": 1,
+      "moments": [
+        "824",
+        "52127",
+        "4002855",
+        "333409469",
+        "29013095019"
+      ],
+      "optimal_expectation": "9712607419/100",
+      "binary_expectation": "10020524953/100",
+      "saving": "153958767/50",
+      "saving_rate": "307917534/10020524953",
+      "polynomial_coefficients": [
+        "824",
+        "-208508",
+        "24017130",
+        "-1333637876",
+        "29013095019"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133",
+        "9629718153"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-115140",
+        "10850166",
+        "-509708532",
+        "9629718153"
+      ],
+      "saving_polynomial_coefficients": [
+        "-244",
+        "93368",
+        "-13166964",
+        "823929344",
+        "-19383376866"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 5,
+      "optimal_sum": "776422712448",
+      "binary_sum": "800300299735",
+      "root": 1,
+      "moments": [
+        "890",
+        "57992",
+        "4531592",
+        "381682040",
+        "33464666528",
+        "3007626551552"
+      ],
+      "optimal_expectation": "194105678112/25",
+      "binary_expectation": "160060059947/20",
+      "saving": "23877587287/100",
+      "saving_rate": "23877587287/800300299735",
+      "polynomial_coefficients": [
+        "890",
+        "-289960",
+        "45315920",
+        "-3816820400",
+        "167323332640",
+        "-3007626551552"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133",
+        "9629718153",
+        "762955476765"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-143925",
+        "18083610",
+        "-1274271330",
+        "48148590765",
+        "-762955476765"
+      ],
+      "saving_polynomial_coefficients": [
+        "-310",
+        "146035",
+        "-27232310",
+        "2542549070",
+        "-119174741875",
+        "2244671074787"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 6,
+      "optimal_sum": "64182076379825",
+      "binary_sum": "66110074035841",
+      "root": 1,
+      "moments": [
+        "954",
+        "63831",
+        "5073485",
+        "432565113",
+        "38278440905",
+        "3465296654481",
+        "318528693318425"
+      ],
+      "optimal_expectation": "2567283055193/4",
+      "binary_expectation": "66110074035841/100",
+      "saving": "481999414004/25",
+      "saving_rate": "1927997656016/66110074035841",
+      "polynomial_coefficients": [
+        "954",
+        "-382986",
+        "76102275",
+        "-8651302260",
+        "574176613575",
+        "-20791779926886",
+        "318528693318425"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133",
+        "9629718153",
+        "762955476765",
+        "62526797144841"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-172710",
+        "27125415",
+        "-2548542660",
+        "144445772295",
+        "-4577732860590",
+        "62526797144841"
+      ],
+      "saving_polynomial_coefficients": [
+        "-374",
+        "210276",
+        "-48976860",
+        "6102759600",
+        "-429730841280",
+        "16214047066296",
+        "-256001896173584"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 7,
+      "optimal_sum": "5438058298083519",
+      "binary_sum": "5599595624578687",
+      "root": 1,
+      "moments": [
+        "1019",
+        "69431",
+        "5565107",
+        "476304221",
+        "42206187815",
+        "3820413547301",
+        "350803801772087",
+        "32545028034167381"
+      ],
+      "optimal_expectation": "5438058298083519/100",
+      "binary_expectation": "5599595624578687/100",
+      "saving": "40384331623792/25",
+      "saving_rate": "161537326495168/5599595624578687",
+      "polynomial_coefficients": [
+        "1019",
+        "-486017",
+        "116867247",
+        "-16670647735",
+        "1477216573525",
+        "-80228684493321",
+        "2455626612404609",
+        "-32545028034167381"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133",
+        "9629718153",
+        "762955476765",
+        "62526797144841",
+        "5254492111160013"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-201495",
+        "37975581",
+        "-4459949655",
+        "337040135355",
+        "-16022065012065",
+        "437687580013887",
+        "-5254492111160013"
+      ],
+      "saving_polynomial_coefficients": [
+        "-439",
+        "284522",
+        "-78891666",
+        "12210698080",
+        "-1140176438170",
+        "64206619481256",
+        "-2017939032390722",
+        "27290535923007368"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 8,
+      "optimal_sum": "469661805876160572",
+      "binary_sum": "483473920962824233",
+      "root": 1,
+      "moments": [
+        "1071",
+        "74014",
+        "5983580",
+        "515345854",
+        "45899971532",
+        "4173425624134",
+        "384797077469780",
+        "35837409956350894",
+        "3363080546922475772"
+      ],
+      "optimal_expectation": "117415451469040143/25",
+      "binary_expectation": "483473920962824233/100",
+      "saving": "13812115086663661/100",
+      "saving_rate": "13812115086663661/483473920962824233",
+      "polynomial_coefficients": [
+        "1071",
+        "-592112",
+        "167540240",
+        "-28859367824",
+        "3212998007240",
+        "-233711834951504",
+        "10774318169153840",
+        "-286699279650807152",
+        "3363080546922475772"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133",
+        "9629718153",
+        "762955476765",
+        "62526797144841",
+        "5254492111160013",
+        "450130517175354633"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-230280",
+        "50634108",
+        "-7135919448",
+        "674080270710",
+        "-42725506698840",
+        "1750750320055548",
+        "-42035936889280104",
+        "450130517175354633"
+      ],
+      "saving_polynomial_coefficients": [
+        "-491",
+        "361832",
+        "-116906132",
+        "21723448376",
+        "-2538917736530",
+        "190986328252664",
+        "-9023567849098292",
+        "244663342761527048",
+        "-2912950029747121139"
+      ]
+    },
+    {
+      "j": 100,
+      "k": 9,
+      "optimal_sum": "41148005718892827088",
+      "binary_sum": "42378964010724368935",
+      "root": 1,
+      "moments": [
+        "1136",
+        "79462",
+        "6454130",
+        "556895272",
+        "49629417686",
+        "4512413838232",
+        "415917307116830",
+        "38717436470650432",
+        "3631386466201454006",
+        "342613556878780258312"
+      ],
+      "optimal_expectation": "10287001429723206772/25",
+      "binary_expectation": "8475792802144873787/20",
+      "saving": "1230958291831541847/100",
+      "saving_rate": "1230958291831541847/42378964010724368935",
+      "polynomial_coefficients": [
+        "1136",
+        "-715158",
+        "232348680",
+        "-46779202848",
+        "6253306628436",
+        "-568564143617232",
+        "34937053797813720",
+        "-1393827712943415552",
+        "32682478195813086054",
+        "-342613556878780258312"
+      ],
+      "binary_moments": [
+        "580",
+        "28785",
+        "1808361",
+        "127427133",
+        "9629718153",
+        "762955476765",
+        "62526797144841",
+        "5254492111160013",
+        "450130517175354633",
+        "39148595137134120765"
+      ],
+      "binary_polynomial_coefficients": [
+        "580",
+        "-259065",
+        "65100996",
+        "-10703879172",
+        "1213344487278",
+        "-96132390072390",
+        "5252250960166644",
+        "-189161716001760468",
+        "4051174654578191697",
+        "-39148595137134120765"
+      ],
+      "saving_polynomial_coefficients": [
+        "-556",
+        "456093",
+        "-167247684",
+        "36075323676",
+        "-5039962141158",
+        "472431753544842",
+        "-29684802837647076",
+        "1204665996941655084",
+        "-28631303541234894357",
+        "303464961741646137547"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 1,
+      "optimal_sum": "49198",
+      "binary_sum": "49216",
+      "root": 37,
+      "moments": [
+        "803",
+        "52783"
+      ],
+      "optimal_expectation": "49198/127",
+      "binary_expectation": "49216/127",
+      "saving": "18/127",
+      "saving_rate": "9/24608",
+      "polynomial_coefficients": [
+        "803",
+        "-52783"
+      ],
+      "binary_moments": [
+        "769",
+        "48447"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-48447"
+      ],
+      "saving_polynomial_coefficients": [
+        "-34",
+        "4336"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 2,
+      "optimal_sum": "3898078",
+      "binary_sum": "3969472",
+      "root": 7,
+      "moments": [
+        "897",
+        "64311",
+        "5765359"
+      ],
+      "optimal_expectation": "3898078/127",
+      "binary_expectation": "3969472/127",
+      "saving": "71394/127",
+      "saving_rate": "35697/1984736",
+      "polynomial_coefficients": [
+        "897",
+        "-128622",
+        "5765359"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-96894",
+        "3871809"
+      ],
+      "saving_polynomial_coefficients": [
+        "-128",
+        "31728",
+        "-1893550"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 3,
+      "optimal_sum": "351279782",
+      "binary_sum": "358961152",
+      "root": 4,
+      "moments": [
+        "978",
+        "73780",
+        "6875020",
+        "701428552"
+      ],
+      "optimal_expectation": "351279782/127",
+      "binary_expectation": "358961152/127",
+      "saving": "7681370/127",
+      "saving_rate": "3840685/179480576",
+      "polynomial_coefficients": [
+        "978",
+        "-221340",
+        "20625060",
+        "-701428552"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-145341",
+        "11615427",
+        "-347199615"
+      ],
+      "saving_polynomial_coefficients": [
+        "-209",
+        "75999",
+        "-9009633",
+        "354228937"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 4,
+      "optimal_sum": "34069467506",
+      "binary_sum": "34799142976",
+      "root": 3,
+      "moments": [
+        "1059",
+        "83027",
+        "7940409",
+        "825417971",
+        "89747862753"
+      ],
+      "optimal_expectation": "34069467506/127",
+      "binary_expectation": "34799142976/127",
+      "saving": "729675470/127",
+      "saving_rate": "364837735/17399571488",
+      "polynomial_coefficients": [
+        "1059",
+        "-332108",
+        "47642454",
+        "-3301671884",
+        "89747862753"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615",
+        "33386919105"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-193788",
+        "23230854",
+        "-1388798460",
+        "33386919105"
+      ],
+      "saving_polynomial_coefficients": [
+        "-290",
+        "138320",
+        "-24411600",
+        "1912873424",
+        "-56360943648"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 5,
+      "optimal_sum": "3463734888820",
+      "binary_sum": "3535579795456",
+      "root": 1,
+      "moments": [
+        "1239",
+        "104693",
+        "10579411",
+        "1149570389",
+        "129772934563",
+        "14992652135213"
+      ],
+      "optimal_expectation": "3463734888820/127",
+      "binary_expectation": "3535579795456/127",
+      "saving": "71844906636/127",
+      "saving_rate": "17961226659/883894948864",
+      "polynomial_coefficients": [
+        "1239",
+        "-523465",
+        "105794110",
+        "-11495703890",
+        "648864672815",
+        "-14992652135213"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615",
+        "33386919105",
+        "3365134242687"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-242235",
+        "38718090",
+        "-3471996150",
+        "166934595525",
+        "-3365134242687"
+      ],
+      "saving_polynomial_coefficients": [
+        "-470",
+        "281230",
+        "-67076020",
+        "8023707740",
+        "-481930077290",
+        "11627517892526"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 6,
+      "optimal_sum": "363857879308418",
+      "binary_sum": "371451021205312",
+      "root": 2,
+      "moments": [
+        "1203",
+        "99169",
+        "9787117",
+        "1040095375",
+        "114985075177",
+        "13024841659159",
+        "1499813393328457"
+      ],
+      "optimal_expectation": "363857879308418/127",
+      "binary_expectation": "371451021205312/127",
+      "saving": "7593141896894/127",
+      "saving_rate": "3796570948447/185725510602656",
+      "polynomial_coefficients": [
+        "1203",
+        "-595014",
+        "146806755",
+        "-20801907500",
+        "1724776127655",
+        "-78149049954954",
+        "1499813393328457"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615",
+        "33386919105",
+        "3365134242687",
+        "350752409601729"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-290682",
+        "58077135",
+        "-6943992300",
+        "500803786575",
+        "-20190805456122",
+        "350752409601729"
+      ],
+      "saving_polynomial_coefficients": [
+        "-434",
+        "304332",
+        "-88729620",
+        "13857915200",
+        "-1223972341080",
+        "57958244498832",
+        "-1149060983726728"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 7,
+      "optimal_sum": "39180592357329776",
+      "binary_sum": "40007610804908032",
+      "root": 1,
+      "moments": [
+        "1411",
+        "124055",
+        "12799003",
+        "1407579455",
+        "160080942523",
+        "18582119770895",
+        "2186817060319483",
+        "259894303804147055"
+      ],
+      "optimal_expectation": "39180592357329776/127",
+      "binary_expectation": "40007610804908032/127",
+      "saving": "827018447578256/127",
+      "saving_rate": "51688652973641/2500475675306752",
+      "polynomial_coefficients": [
+        "1411",
+        "-868385",
+        "268779063",
+        "-49265280925",
+        "5602832988305",
+        "-390224515188795",
+        "15307719422236381",
+        "-259894303804147055"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615",
+        "33386919105",
+        "3365134242687",
+        "350752409601729",
+        "37480495342796415"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-339129",
+        "81307989",
+        "-12151986525",
+        "1168542168675",
+        "-70667819096427",
+        "2455266867212103",
+        "-37480495342796415"
+      ],
+      "saving_polynomial_coefficients": [
+        "-642",
+        "529256",
+        "-187471074",
+        "37113294400",
+        "-4434290819630",
+        "319556696092368",
+        "-12852452555024278",
+        "222413808461350640"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 8,
+      "optimal_sum": "4299698252805868183",
+      "binary_sum": "4391968634885932096",
+      "root": 1,
+      "moments": [
+        "1490",
+        "132873",
+        "13813391",
+        "1526451387",
+        "174171685931",
+        "20265070756803",
+        "2388895495599371",
+        "284255000354615667",
+        "34061751665833898171"
+      ],
+      "optimal_expectation": "4299698252805868183/127",
+      "binary_expectation": "4391968634885932096/127",
+      "saving": "92270382080063913/127",
+      "saving_rate": "92270382080063913/4391968634885932096",
+      "polynomial_coefficients": [
+        "1490",
+        "-1062984",
+        "386774948",
+        "-85481277672",
+        "12192018015170",
+        "-1134843962380968",
+        "66889073876782388",
+        "-2274040002836925336",
+        "34061751665833898171"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615",
+        "33386919105",
+        "3365134242687",
+        "350752409601729",
+        "37480495342796415",
+        "4082112800520807105"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-387576",
+        "108410652",
+        "-19443178440",
+        "2337084337350",
+        "-188447517590472",
+        "9821067468848412",
+        "-299843962742371320",
+        "4082112800520807105"
+      ],
+      "saving_polynomial_coefficients": [
+        "-721",
+        "675408",
+        "-278364296",
+        "66038099232",
+        "-9854933677820",
+        "946396444790496",
+        "-57068006407933976",
+        "1974196040094554016",
+        "-29979638865313091066"
+      ]
+    },
+    {
+      "j": 127,
+      "k": 9,
+      "optimal_sum": "478931634294791041059",
+      "binary_sum": "489440934622866804736",
+      "root": 1,
+      "moments": [
+        "1469",
+        "129224",
+        "13259594",
+        "1447697642",
+        "163376468942",
+        "18818690623754",
+        "2198010274594694",
+        "259326016683372482",
+        "30830656660677290702",
+        "3687468291736291195034"
+      ],
+      "optimal_expectation": "478931634294791041059/127",
+      "binary_expectation": "489440934622866804736/127",
+      "saving": "10509300328075763677/127",
+      "saving_rate": "10509300328075763677/489440934622866804736",
+      "polynomial_coefficients": [
+        "1469",
+        "-1163016",
+        "477345384",
+        "-121606601928",
+        "20585435086692",
+        "-2371155018593004",
+        "184632863065954296",
+        "-9335736600601409352",
+        "277475909946095616318",
+        "-3687468291736291195034"
+      ],
+      "binary_moments": [
+        "769",
+        "48447",
+        "3871809",
+        "347199615",
+        "33386919105",
+        "3365134242687",
+        "350752409601729",
+        "37480495342796415",
+        "4082112800520807105",
+        "451322730140461349247"
+      ],
+      "binary_polynomial_coefficients": [
+        "769",
+        "-436023",
+        "139385124",
+        "-29164767660",
+        "4206751807230",
+        "-424006914578562",
+        "29463202406545236",
+        "-1349297832340670940",
+        "36739015204687263945",
+        "-451322730140461349247"
+      ],
+      "saving_polynomial_coefficients": [
+        "-700",
+        "726993",
+        "-337960260",
+        "92441834268",
+        "-16378683279462",
+        "1947148104014442",
+        "-155169660659409060",
+        "7986438768260738412",
+        "-240736894741408352373",
+        "3236145561595829845787"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 1,
+      "optimal_sum": "133775",
+      "binary_sum": "135817",
+      "root": 75,
+      "moments": [
+        "1365",
+        "139225"
+      ],
+      "optimal_expectation": "5351/8",
+      "binary_expectation": "135817/200",
+      "saving": "1021/100",
+      "saving_rate": "2042/135817",
+      "polynomial_coefficients": [
+        "1365",
+        "-139225"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-134783"
+      ],
+      "saving_polynomial_coefficients": [
+        "-12",
+        "4442"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 2,
+      "optimal_sum": "16844111",
+      "binary_sum": "17289955",
+      "root": 3,
+      "moments": [
+        "1633",
+        "191175",
+        "27994111"
+      ],
+      "optimal_expectation": "16844111/200",
+      "binary_expectation": "3457991/40",
+      "saving": "111461/50",
+      "saving_rate": "445844/17289955",
+      "polynomial_coefficients": [
+        "1633",
+        "-382350",
+        "27994111"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-269566",
+        "17083155"
+      ],
+      "saving_polynomial_coefficients": [
+        "-280",
+        "112784",
+        "-10910956"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 3,
+      "optimal_sum": "2399721304",
+      "binary_sum": "2469721783",
+      "root": 3,
+      "moments": [
+        "1745",
+        "211356",
+        "31631452",
+        "5176429896"
+      ],
+      "optimal_expectation": "299965163/25",
+      "binary_expectation": "2469721783/200",
+      "saving": "70000479/200",
+      "saving_rate": "70000479/2469721783",
+      "polynomial_coefficients": [
+        "1745",
+        "-634068",
+        "94894356",
+        "-5176429896"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-404349",
+        "51249465",
+        "-2430211217"
+      ],
+      "saving_polynomial_coefficients": [
+        "-392",
+        "229719",
+        "-43644891",
+        "2746218679"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 4,
+      "optimal_sum": "367523588689",
+      "binary_sum": "378102988903",
+      "root": 3,
+      "moments": [
+        "1838",
+        "227617",
+        "34512345",
+        "5694545569",
+        "983141243889"
+      ],
+      "optimal_expectation": "367523588689/200",
+      "binary_expectation": "378102988903/200",
+      "saving": "5289700107/100",
+      "saving_rate": "10579400214/378102988903",
+      "polynomial_coefficients": [
+        "1838",
+        "-910468",
+        "207074070",
+        "-22778182276",
+        "983141243889"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217",
+        "370570762503"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-539132",
+        "102498930",
+        "-9720844868",
+        "370570762503"
+      ],
+      "saving_polynomial_coefficients": [
+        "-485",
+        "371336",
+        "-104575140",
+        "13057337408",
+        "-612570481386"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 5,
+      "optimal_sum": "58983277084616",
+      "binary_sum": "60638034127447",
+      "root": 2,
+      "moments": [
+        "1983",
+        "254074",
+        "39401360",
+        "6608040928",
+        "1155337381724",
+        "207214533439384"
+      ],
+      "optimal_expectation": "7372909635577/25",
+      "binary_expectation": "60638034127447/200",
+      "saving": "1654757042831/200",
+      "saving_rate": "1654757042831/60638034127447",
+      "polynomial_coefficients": [
+        "1983",
+        "-1270370",
+        "394013600",
+        "-66080409280",
+        "5776686908620",
+        "-207214533439384"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217",
+        "370570762503",
+        "59196641575553"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-673915",
+        "170831550",
+        "-24302112170",
+        "1852853812515",
+        "-59196641575553"
+      ],
+      "saving_polynomial_coefficients": [
+        "-630",
+        "596455",
+        "-223182050",
+        "41778297110",
+        "-3923833096105",
+        "148017891863831"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 6,
+      "optimal_sum": "9781668955667563",
+      "binary_sum": "10051516279106575",
+      "root": 2,
+      "moments": [
+        "2089",
+        "272613",
+        "42732903",
+        "7219023027",
+        "1268969723643",
+        "228557517256203",
+        "41843827797311163"
+      ],
+      "optimal_expectation": "9781668955667563/200",
+      "binary_expectation": "402060651164263/8",
+      "saving": "67461830859753/50",
+      "saving_rate": "269847323439012/10051516279106575",
+      "polynomial_coefficients": [
+        "2089",
+        "-1635678",
+        "640993545",
+        "-144380460540",
+        "19034545854645",
+        "-1371345103537218",
+        "41843827797311163"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217",
+        "370570762503",
+        "59196641575553",
+        "9774463387970175"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-808698",
+        "256247325",
+        "-48604224340",
+        "5558561437545",
+        "-355179849453318",
+        "9774463387970175"
+      ],
+      "saving_polynomial_coefficients": [
+        "-736",
+        "826980",
+        "-384746220",
+        "95776236200",
+        "-13475984417100",
+        "1016165254083900",
+        "-32069364409340988"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 7,
+      "optimal_sum": "1662091225289421917",
+      "binary_sum": "1707470041155537823",
+      "root": 2,
+      "moments": [
+        "2235",
+        "298813",
+        "47512203",
+        "8101095523",
+        "1433137569063",
+        "259304885849443",
+        "47630986706047263",
+        "8844136259284626283"
+      ],
+      "optimal_expectation": "1662091225289421917/200",
+      "binary_expectation": "1707470041155537823/200",
+      "saving": "22689407933057953/100",
+      "saving_rate": "45378815866115906/1707470041155537823",
+      "polynomial_coefficients": [
+        "2235",
+        "-2091691",
+        "997756263",
+        "-283538343305",
+        "50159814917205",
+        "-5445402602838303",
+        "333416906942330841",
+        "-8844136259284626283"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217",
+        "370570762503",
+        "59196641575553",
+        "9774463387970175",
+        "1654002727378187177"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-943481",
+        "358746255",
+        "-85057392595",
+        "12969976687605",
+        "-1243129473086613",
+        "68421243715791225",
+        "-1654002727378187177"
+      ],
+      "saving_polynomial_coefficients": [
+        "-882",
+        "1148210",
+        "-639010008",
+        "198480950710",
+        "-37189838229600",
+        "4202273129751690",
+        "-264995663226539616",
+        "7190133531906439106"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 8,
+      "optimal_sum": "287691263717847846550",
+      "binary_sum": "295543087280962801543",
+      "root": 1,
+      "moments": [
+        "2563",
+        "361004",
+        "59451398",
+        "10411047080",
+        "1882372542470",
+        "346995412792304",
+        "64796148747832958",
+        "12211550021233456040",
+        "2317292932030656550550"
+      ],
+      "optimal_expectation": "5753825274356956931/4",
+      "binary_expectation": "295543087280962801543/200",
+      "saving": "7851823563114954993/200",
+      "saving_rate": "7851823563114954993/295543087280962801543",
+      "polynomial_coefficients": [
+        "2563",
+        "-2888032",
+        "1664639144",
+        "-583018636480",
+        "131766077972900",
+        "-19431743116369024",
+        "1814292164939322824",
+        "-97692400169867648320",
+        "2317292932030656550550"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217",
+        "370570762503",
+        "59196641575553",
+        "9774463387970175",
+        "1654002727378187177",
+        "285188930711210284743"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-1078264",
+        "478328340",
+        "-136091828152",
+        "25939953375210",
+        "-3315011928230968",
+        "273684974863164900",
+        "-13232021819025497416",
+        "285188930711210284743"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1210",
+        "1809768",
+        "-1186310804",
+        "446926808328",
+        "-105826124597690",
+        "16116731188138056",
+        "-1540607190076157924",
+        "84460378350842150904",
+        "-2032104001319446265807"
+      ]
+    },
+    {
+      "j": 200,
+      "k": 9,
+      "optimal_sum": "50517240358037886782780",
+      "binary_sum": "51917377747854662047687",
+      "root": 1,
+      "moments": [
+        "2660",
+        "376940",
+        "62186248",
+        "10893920804",
+        "1969256437072",
+        "362838609591620",
+        "67713778292991088",
+        "12752911212602303684",
+        "2418335684873328122992",
+        "461036944325094565642820"
+      ],
+      "optimal_expectation": "2525862017901894339139/10",
+      "binary_expectation": "51917377747854662047687/200",
+      "saving": "1400137389816775264907/200",
+      "saving_rate": "1400137389816775264907/51917377747854662047687",
+      "polynomial_coefficients": [
+        "2660",
+        "-3392460",
+        "2238704928",
+        "-915089347536",
+        "248126311071072",
+        "-45717664808544120",
+        "5687957376611251392",
+        "-459104803653682932624",
+        "21765021163859953106928",
+        "-461036944325094565642820"
+      ],
+      "binary_moments": [
+        "1353",
+        "134783",
+        "17083155",
+        "2430211217",
+        "370570762503",
+        "59196641575553",
+        "9774463387970175",
+        "1654002727378187177",
+        "285188930711210284743",
+        "49906370721167115609713"
+      ],
+      "binary_polynomial_coefficients": [
+        "1353",
+        "-1213047",
+        "614993580",
+        "-204137742228",
+        "46691916075378",
+        "-7458776838519678",
+        "821054924589494700",
+        "-59544098185614738372",
+        "2566700376400892562687",
+        "-49906370721167115609713"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1307",
+        "2179413",
+        "-1623711348",
+        "710951605308",
+        "-201434394995694",
+        "38258887970024442",
+        "-4866902452021756692",
+        "399560705468068194252",
+        "-19198320787459060544241",
+        "411130573603927450033107"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 1,
+      "optimal_sum": "229432",
+      "binary_sum": "229504",
+      "root": 74,
+      "moments": [
+        "1861",
+        "245123"
+      ],
+      "optimal_expectation": "13496/15",
+      "binary_expectation": "229504/255",
+      "saving": "24/85",
+      "saving_rate": "9/28688",
+      "polynomial_coefficients": [
+        "1861",
+        "-245123"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-227711"
+      ],
+      "saving_polynomial_coefficients": [
+        "-68",
+        "17412"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 2,
+      "optimal_sum": "36744300",
+      "binary_sum": "37315456",
+      "root": 14,
+      "moments": [
+        "2047",
+        "290913",
+        "52003755"
+      ],
+      "optimal_expectation": "2449620/17",
+      "binary_expectation": "37315456/255",
+      "saving": "571156/255",
+      "saving_rate": "142789/9328864",
+      "polynomial_coefficients": [
+        "2047",
+        "-581826",
+        "52003755"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-455422",
+        "36858241"
+      ],
+      "saving_polynomial_coefficients": [
+        "-254",
+        "126404",
+        "-15145514"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 3,
+      "optimal_sum": "6685710065",
+      "binary_sum": "6808748032",
+      "root": 1,
+      "moments": [
+        "2469",
+        "395224",
+        "77838552",
+        "16701875290"
+      ],
+      "optimal_expectation": "1337142013/51",
+      "binary_expectation": "6808748032/255",
+      "saving": "123037967/255",
+      "saving_rate": "123037967/6808748032",
+      "polynomial_coefficients": [
+        "2469",
+        "-1185672",
+        "233515656",
+        "-16701875290"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-683133",
+        "110574723",
+        "-6697488383"
+      ],
+      "saving_polynomial_coefficients": [
+        "-676",
+        "502539",
+        "-122940933",
+        "10004386907"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 4,
+      "optimal_sum": "1307981742219",
+      "binary_sum": "1331333009536",
+      "root": 1,
+      "moments": [
+        "2632",
+        "432757",
+        "86569881",
+        "18755796703",
+        "4237724065629"
+      ],
+      "optimal_expectation": "435993914073/85",
+      "binary_expectation": "1331333009536/255",
+      "saving": "23351267317/255",
+      "saving_rate": "23351267317/1331333009536",
+      "polynomial_coefficients": [
+        "2632",
+        "-1731028",
+        "519419286",
+        "-75023186812",
+        "4237724065629"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383",
+        "1304320993921"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-910844",
+        "221149446",
+        "-26789953532",
+        "1304320993921"
+      ],
+      "saving_polynomial_coefficients": [
+        "-839",
+        "820184",
+        "-298269840",
+        "48233233280",
+        "-2933403071708"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 5,
+      "optimal_sum": "268043102506216",
+      "binary_sum": "272641636777984",
+      "root": 1,
+      "moments": [
+        "2740",
+        "455924",
+        "91669912",
+        "19903034120",
+        "4499498737000",
+        "1042475743453784"
+      ],
+      "optimal_expectation": "268043102506216/255",
+      "binary_expectation": "272641636777984/255",
+      "saving": "1532844757256/85",
+      "saving_rate": "574816783971/34080204597248",
+      "polynomial_coefficients": [
+        "2740",
+        "-2279620",
+        "916699120",
+        "-199030341200",
+        "22497493685000",
+        "-1042475743453784"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383",
+        "1304320993921",
+        "266052687201791"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-1138555",
+        "368582410",
+        "-66974883830",
+        "6521604969605",
+        "-266052687201791"
+      ],
+      "saving_polynomial_coefficients": [
+        "-947",
+        "1141065",
+        "-548116710",
+        "132055457370",
+        "-15975888715395",
+        "776423056251993"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 6,
+      "optimal_sum": "56726845931300883",
+      "binary_sum": "57699484984360576",
+      "root": 1,
+      "moments": [
+        "2922",
+        "497813",
+        "101459763",
+        "22218621455",
+        "5052175740759",
+        "1175299868967983",
+        "277599045632764623"
+      ],
+      "optimal_expectation": "18908948643766961/85",
+      "binary_expectation": "57699484984360576/255",
+      "saving": "972639053059693/255",
+      "saving_rate": "972639053059693/57699484984360576",
+      "polynomial_coefficients": [
+        "2922",
+        "-2986878",
+        "1521896445",
+        "-444372429100",
+        "75782636111385",
+        "-7051799213807898",
+        "277599045632764623"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383",
+        "1304320993921",
+        "266052687201791",
+        "56083469542231681"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-1366266",
+        "552873615",
+        "-133949767660",
+        "19564814908815",
+        "-1596316123210746",
+        "56083469542231681"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1129",
+        "1620612",
+        "-969022830",
+        "310422661440",
+        "-56217821202570",
+        "5455483090597152",
+        "-221515576090532942"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 7,
+      "optimal_sum": "12300129311692244380",
+      "binary_sum": "12511926770734907392",
+      "root": 1,
+      "moments": [
+        "3104",
+        "539750",
+        "111297330",
+        "24557238740",
+        "5613651604110",
+        "1311130174939940",
+        "310654454261246070",
+        "74361652600331215820"
+      ],
+      "optimal_expectation": "2460025862338448876/51",
+      "binary_expectation": "12511926770734907392/255",
+      "saving": "70599153014221004/85",
+      "saving_rate": "52949364760665753/3127981692683726848",
+      "polynomial_coefficients": [
+        "3104",
+        "-3778250",
+        "2337243930",
+        "-859503355900",
+        "196477806143850",
+        "-27533733673738740",
+        "2174581179828722490",
+        "-74361652600331215820"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383",
+        "1304320993921",
+        "266052687201791",
+        "56083469542231681",
+        "12113709491085548543"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-1593977",
+        "774023061",
+        "-234412093405",
+        "45651234787235",
+        "-5587106431237611",
+        "392584286795621767",
+        "-12113709491085548543"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1311",
+        "2184273",
+        "-1563220869",
+        "625091262495",
+        "-150826571356615",
+        "21946627242501129",
+        "-1781996893033100723",
+        "62247943109245667277"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 8,
+      "optimal_sum": "2716773332484908592750",
+      "binary_sum": "2764219993893182179456",
+      "root": 1,
+      "moments": [
+        "3253",
+        "572161",
+        "118596411",
+        "26238987139",
+        "6006955700055",
+        "1404055783250011",
+        "332772904942957671",
+        "79655962192222264459",
+        "19209332505803282654535"
+      ],
+      "optimal_expectation": "181118222165660572850/17",
+      "binary_expectation": "2764219993893182179456/255",
+      "saving": "47446661408273586706/255",
+      "saving_rate": "23723330704136793353/1382109996946591089728",
+      "polynomial_coefficients": [
+        "3253",
+        "-4577288",
+        "3320699508",
+        "-1469383279784",
+        "420486899003850",
+        "-78627123862000616",
+        "9317641338402814788",
+        "-637247697537778115672",
+        "19209332505803282654535"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383",
+        "1304320993921",
+        "266052687201791",
+        "56083469542231681",
+        "12113709491085548543",
+        "2665724990188269225601"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-1821688",
+        "1032030748",
+        "-375059349448",
+        "91302469574470",
+        "-14898950483300296",
+        "1570337147182487068",
+        "-96909675928684388344",
+        "2665724990188269225601"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1460",
+        "2755600",
+        "-2288668760",
+        "1094323930336",
+        "-329184429429380",
+        "63728173378700320",
+        "-7747304191220327720",
+        "540338021609093727328",
+        "-16543607515615013428934"
+      ]
+    },
+    {
+      "j": 255,
+      "k": 9,
+      "optimal_sum": "608950698995496312413491",
+      "binary_sum": "619732750634868648853504",
+      "root": 1,
+      "moments": [
+        "3442",
+        "615419",
+        "128699277",
+        "28630832315",
+        "6578617293981",
+        "1541628994332419",
+        "366051938602941957",
+        "87738265785357206075",
+        "21178407452176801840461",
+        "5140097431617397521307379"
+      ],
+      "optimal_expectation": "608950698995496312413491/255",
+      "binary_expectation": "619732750634868648853504/255",
+      "saving": "3594017213124112146671/85",
+      "saving_rate": "829388587644025880001/47671750048836049911808",
+      "polynomial_coefficients": [
+        "3442",
+        "-5538771",
+        "4633173972",
+        "-2404989914460",
+        "828905779041606",
+        "-194245253285884794",
+        "30748362842647124388",
+        "-3158577568272859418700",
+        "190605667069591216564149",
+        "-5140097431617397521307379"
+      ],
+      "binary_moments": [
+        "1793",
+        "227711",
+        "36858241",
+        "6697488383",
+        "1304320993921",
+        "266052687201791",
+        "56083469542231681",
+        "12113709491085548543",
+        "2665724990188269225601",
+        "595300387482506647982591"
+      ],
+      "binary_polynomial_coefficients": [
+        "1793",
+        "-2049399",
+        "1326896676",
+        "-562589024172",
+        "164344445234046",
+        "-33522638587425666",
+        "4711011441547461204",
+        "-436093541679079747548",
+        "23991524911694423030409",
+        "-595300387482506647982591"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1649",
+        "3489372",
+        "-3306277296",
+        "1842400890288",
+        "-664561333807560",
+        "160722614698459128",
+        "-26037351401099663184",
+        "2722484026593779671152",
+        "-166614142157896793533740",
+        "4544797044134890873324788"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 1,
+      "optimal_sum": "999077",
+      "binary_sum": "1001003",
+      "root": 245,
+      "moments": [
+        "3999",
+        "1000423"
+      ],
+      "optimal_expectation": "999077/500",
+      "binary_expectation": "1001003/500",
+      "saving": "963/250",
+      "saving_rate": "1926/1001003",
+      "polynomial_coefficients": [
+        "3999",
+        "-1000423"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-997997"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1",
+        "2426"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 2,
+      "optimal_sum": "315883081",
+      "binary_sum": "320319991",
+      "root": 1,
+      "moments": [
+        "5014",
+        "1500375",
+        "562758081"
+      ],
+      "optimal_expectation": "315883081/500",
+      "binary_expectation": "320319991/500",
+      "saving": "443691/50",
+      "saving_rate": "4436910/320319991",
+      "polynomial_coefficients": [
+        "5014",
+        "-3000750",
+        "562758081"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-1995994",
+        "318816991"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1016",
+        "1004756",
+        "-243941090"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 3,
+      "optimal_sum": "113266991024",
+      "binary_sum": "115103402663",
+      "root": 1,
+      "moments": [
+        "5326",
+        "1643856",
+        "628885630",
+        "262919453976"
+      ],
+      "optimal_expectation": "28316747756/125",
+      "binary_expectation": "115103402663/500",
+      "saving": "1836411639/500",
+      "saving_rate": "1836411639/115103402663",
+      "polynomial_coefficients": [
+        "5326",
+        "-4931568",
+        "1886656890",
+        "-262919453976"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-2993991",
+        "956450973",
+        "-114374333837"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1328",
+        "1937577",
+        "-930205917",
+        "148545120139"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 4,
+      "optimal_sum": "43633629230235",
+      "binary_sum": "44309659148575",
+      "root": 2,
+      "moments": [
+        "5652",
+        "1791201",
+        "696097011",
+        "293877750129",
+        "129594112988235"
+      ],
+      "optimal_expectation": "8726725846047/100",
+      "binary_expectation": "1772386365943/20",
+      "saving": "33801495917/25",
+      "saving_rate": "135205983668/8861931829715",
+      "polynomial_coefficients": [
+        "5652",
+        "-7164804",
+        "4176582066",
+        "-1175511000516",
+        "129594112988235"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837",
+        "43956340322575"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-3991988",
+        "1912901946",
+        "-457497335348",
+        "43956340322575"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1654",
+        "3172816",
+        "-2263680120",
+        "718013665168",
+        "-85637772665660"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 5,
+      "optimal_sum": "17595767702676586",
+      "binary_sum": "17855654529962063",
+      "root": 2,
+      "moments": [
+        "5861",
+        "1878504",
+        "733507420",
+        "310262376678",
+        "136876908197176",
+        "61948586095263414"
+      ],
+      "optimal_expectation": "8797883851338293/250",
+      "binary_expectation": "17855654529962063/500",
+      "saving": "259886827285477/500",
+      "saving_rate": "259886827285477/17855654529962063",
+      "polynomial_coefficients": [
+        "5861",
+        "-9392520",
+        "7335074200",
+        "-3102623766780",
+        "684384540985880",
+        "-61948586095263414"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837",
+        "43956340322575",
+        "17684037933975437"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-4989985",
+        "3188169910",
+        "-1143743338370",
+        "219781701612875",
+        "-17684037933975437"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1863",
+        "4402535",
+        "-4146904290",
+        "1958880428410",
+        "-464602839373005",
+        "44264548161287977"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 6,
+      "optimal_sum": "7325679547689190651",
+      "binary_sum": "7432222682653227031",
+      "root": 2,
+      "moments": [
+        "6225",
+        "2043479",
+        "809353671",
+        "345526463321",
+        "153414174486531",
+        "69755639897532929",
+        "32223224155796727651"
+      ],
+      "optimal_expectation": "7325679547689190651/500",
+      "binary_expectation": "7432222682653227031/500",
+      "saving": "5327156748201819/25",
+      "saving_rate": "106543134964036380/7432222682653227031",
+      "polynomial_coefficients": [
+        "6225",
+        "-12260874",
+        "12140305065",
+        "-6910529266420",
+        "2301212617297965",
+        "-418533839385197574",
+        "32223224155796727651"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837",
+        "43956340322575",
+        "17684037933975437",
+        "7348653304923288031"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-5987982",
+        "4782254865",
+        "-2287486676740",
+        "659345104838625",
+        "-106104227603852622",
+        "7348653304923288031"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2227",
+        "6272892",
+        "-7358050200",
+        "4623042589680",
+        "-1641867512459340",
+        "312429611781344952",
+        "-24874570850873439620"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 7,
+      "optimal_sum": "3123435226374130408409",
+      "binary_sum": "3168555776860408469783",
+      "root": 2,
+      "moments": [
+        "6557",
+        "2191403",
+        "876695067",
+        "376658115851",
+        "167964958752123",
+        "76612163284127723",
+        "35474243969979211227",
+        "16602624637108188136091"
+      ],
+      "optimal_expectation": "3123435226374130408409/500",
+      "binary_expectation": "3168555776860408469783/500",
+      "saving": "22560275243139030687/250",
+      "saving_rate": "45120550486278061374/3168555776860408469783",
+      "polynomial_coefficients": [
+        "6557",
+        "-15339821",
+        "18410596407",
+        "-13183034054785",
+        "5878773556324305",
+        "-1608855428966682183",
+        "248319707789854478589",
+        "-16602624637108188136091"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837",
+        "43956340322575",
+        "17684037933975437",
+        "7348653304923288031",
+        "3127768748578180388717"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-6985979",
+        "6695156811",
+        "-4003101684295",
+        "1538471911290125",
+        "-371364796613484177",
+        "51440573134463016217",
+        "-3127768748578180388717"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2559",
+        "8353842",
+        "-11715439596",
+        "9179932370490",
+        "-4340301645034180",
+        "1237490632353198006",
+        "-196879134655391462372",
+        "13474855888530007747374"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 8,
+      "optimal_sum": "1356153640615024361448578",
+      "binary_sum": "1375826306363986576325455",
+      "root": 2,
+      "moments": [
+        "6873",
+        "2329280",
+        "938549278",
+        "404935503074",
+        "181059389973298",
+        "82731576332885690",
+        "38353756848694891138",
+        "17964931796090433397994",
+        "8479951085633599987424578"
+      ],
+      "optimal_expectation": "678076820307512180724289/250",
+      "binary_expectation": "275165261272797315265091/100",
+      "saving": "19672665748962214876877/500",
+      "saving_rate": "19672665748962214876877/1375826306363986576325455",
+      "polynomial_coefficients": [
+        "6873",
+        "-18634240",
+        "26279379784",
+        "-22676388172144",
+        "12674157298130860",
+        "-4632968274641598640",
+        "1073905191763456951864",
+        "-143719454368723467183952",
+        "8479951085633599987424578"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837",
+        "43956340322575",
+        "17684037933975437",
+        "7348653304923288031",
+        "3127768748578180388717",
+        "1355880445026125914193455"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-7983976",
+        "8926875748",
+        "-6404962694872",
+        "3076943822580250",
+        "-990306124302624472",
+        "205762292537852064868",
+        "-25022149988625443109736",
+        "1355880445026125914193455"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2875",
+        "10650264",
+        "-17352504036",
+        "16271425477272",
+        "-9597213475550610",
+        "3642662150338974168",
+        "-868142899225604886996",
+        "118697304380098024074216",
+        "-7124070640607474073231123"
+      ]
+    },
+    {
+      "j": 500,
+      "k": 9,
+      "optimal_sum": "597387303498019996285029787",
+      "binary_sum": "606096073398743772156301343",
+      "root": 1,
+      "moments": [
+        "7682",
+        "2713953",
+        "1123728565",
+        "494759575113",
+        "224845326708133",
+        "104148300424789353",
+        "48854991263887123285",
+        "23123553969711601094553",
+        "11017745142945545768441413",
+        "5276709115412353228224328713"
+      ],
+      "optimal_expectation": "597387303498019996285029787/500",
+      "binary_expectation": "606096073398743772156301343/500",
+      "saving": "2177192475180943967817889/125",
+      "saving_rate": "8708769900723775871271556/606096073398743772156301343",
+      "polynomial_coefficients": [
+        "7682",
+        "-24425577",
+        "40454228340",
+        "-41559804309492",
+        "28330511165224758",
+        "-13122685853523458478",
+        "4103819266166518355940",
+        "-832447942909617639403908",
+        "99159706286509911915972717",
+        "-5276709115412353228224328713"
+      ],
+      "binary_moments": [
+        "3998",
+        "997997",
+        "318816991",
+        "114374333837",
+        "43956340322575",
+        "17684037933975437",
+        "7348653304923288031",
+        "3127768748578180388717",
+        "1355880445026125914193455",
+        "596325460229719793761246157"
+      ],
+      "binary_polynomial_coefficients": [
+        "3998",
+        "-8981973",
+        "11477411676",
+        "-9607444042308",
+        "5538498880644450",
+        "-2228188779680905062",
+        "617286877613556194604",
+        "-112599674948814493993812",
+        "12202924005235133227741095",
+        "-596325460229719793761246157"
+      ],
+      "saving_polynomial_coefficients": [
+        "-3684",
+        "15443604",
+        "-28976816664",
+        "31952360267184",
+        "-22792012284580308",
+        "10894497073842553416",
+        "-3486532388552962161336",
+        "719848267960803145410096",
+        "-86956782281274778688231622",
+        "4680383655182633434463082556"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 1,
+      "optimal_sum": "1048544",
+      "binary_sum": "1048832",
+      "root": 148,
+      "moments": [
+        "4233",
+        "1114519"
+      ],
+      "optimal_expectation": "149792/73",
+      "binary_expectation": "1048832/511",
+      "saving": "288/511",
+      "saving_rate": "9/32776",
+      "polynomial_coefficients": [
+        "4233",
+        "-1114519"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-1044735"
+      ],
+      "saving_polynomial_coefficients": [
+        "-136",
+        "69784"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 2,
+      "optimal_sum": "338562180",
+      "binary_sum": "343131904",
+      "root": 1,
+      "moments": [
+        "5109",
+        "1554899",
+        "593601769"
+      ],
+      "optimal_expectation": "338562180/511",
+      "binary_expectation": "343131904/511",
+      "saving": "4569724/511",
+      "saving_rate": "1142431/85782976",
+      "polynomial_coefficients": [
+        "5109",
+        "-3109798",
+        "593601769"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-2089470",
+        "341038337"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1012",
+        "1020328",
+        "-252563432"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 3,
+      "optimal_sum": "124084135388",
+      "binary_sum": "126052794368",
+      "root": 1,
+      "moments": [
+        "5455",
+        "1719143",
+        "671752665",
+        "286875775253"
+      ],
+      "optimal_expectation": "124084135388/511",
+      "binary_expectation": "126052794368/511",
+      "saving": "1968658980/511",
+      "saving_rate": "492164745/31513198592",
+      "polynomial_coefficients": [
+        "5455",
+        "-5157429",
+        "2015257995",
+        "-286875775253"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-3134205",
+        "1023115011",
+        "-125026541055"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1358",
+        "2023224",
+        "-992142984",
+        "161849234198"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 4,
+      "optimal_sum": "48857220357624",
+      "binary_sum": "49605215723776",
+      "root": 2,
+      "moments": [
+        "5772",
+        "1864508",
+        "739031860",
+        "318334553504",
+        "143259873706180"
+      ],
+      "optimal_expectation": "6979602908232/73",
+      "binary_expectation": "49605215723776/511",
+      "saving": "747995366152/511",
+      "saving_rate": "93499420769/6200651965472",
+      "polynomial_coefficients": [
+        "5772",
+        "-7458032",
+        "4434191160",
+        "-1273338214016",
+        "143259873706180"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055",
+        "49103059146497"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-4178940",
+        "2046230022",
+        "-500106164220",
+        "49103059146497"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1675",
+        "3279092",
+        "-2387961138",
+        "773232049796",
+        "-94156814559683"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 5,
+      "optimal_sum": "20139569150026065",
+      "binary_sum": "20433900952420352",
+      "root": 3,
+      "moments": [
+        "5981",
+        "1952936",
+        "777391338",
+        "335326469540",
+        "150888624943314",
+        "69662326742235236"
+      ],
+      "optimal_expectation": "20139569150026065/511",
+      "binary_expectation": "20433900952420352/511",
+      "saving": "42047400342041/73",
+      "saving_rate": "294331802394287/20433900952420352",
+      "polynomial_coefficients": [
+        "5981",
+        "-9764680",
+        "7773913380",
+        "-3353264695400",
+        "754443124716570",
+        "-69662326742235236"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055",
+        "49103059146497",
+        "20187131975666175"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-5223675",
+        "3410383370",
+        "-1250265410550",
+        "245515295732485",
+        "-20187131975666175"
+      ],
+      "saving_polynomial_coefficients": [
+        "-1884",
+        "4541005",
+        "-4363530010",
+        "2102999284850",
+        "-508927828984085",
+        "49475194766569061"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 6,
+      "optimal_sum": "8569645929201229004",
+      "binary_sum": "8694169047600626944",
+      "root": 1,
+      "moments": [
+        "6854",
+        "2380310",
+        "988237090",
+        "439948891082",
+        "203023588362514",
+        "95725475035676090",
+        "45778038239947934290"
+      ],
+      "optimal_expectation": "8569645929201229004/511",
+      "binary_expectation": "8694169047600626944/511",
+      "saving": "124523118399397940/511",
+      "saving_rate": "31130779599849485/2173542261900156736",
+      "polynomial_coefficients": [
+        "6854",
+        "-14281860",
+        "14823556350",
+        "-8798977821640",
+        "3045353825437710",
+        "-574352850214056540",
+        "45778038239947934290"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055",
+        "49103059146497",
+        "20187131975666175",
+        "8572307204206763777"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-6268410",
+        "5115575055",
+        "-2500530821100",
+        "736545887197455",
+        "-121122791853997050",
+        "8572307204206763777"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2757",
+        "8013450",
+        "-9707981295",
+        "6298447000540",
+        "-2308807938240255",
+        "453230058360059490",
+        "-37205731035741170513"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 7,
+      "optimal_sum": "3734473803059569251346",
+      "binary_sum": "3788747886027501928448",
+      "root": 2,
+      "moments": [
+        "6710",
+        "2289490",
+        "935482524",
+        "410566866886",
+        "187047938849268",
+        "87168654654500470",
+        "41240541903290549604",
+        "19721987459118432882646"
+      ],
+      "optimal_expectation": "533496257579938464478/73",
+      "binary_expectation": "3788747886027501928448/511",
+      "saving": "54274082967932677102/511",
+      "saving_rate": "27137041483966338551/1894373943013750964224",
+      "polynomial_coefficients": [
+        "6710",
+        "-16026430",
+        "19645133004",
+        "-14369840341010",
+        "6546677859724380",
+        "-1830541747744509870",
+        "288683793323033847228",
+        "-19721987459118432882646"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055",
+        "49103059146497",
+        "20187131975666175",
+        "8572307204206763777",
+        "3728316082836397405695"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-7313145",
+        "7161805077",
+        "-4375928936925",
+        "1718607070127395",
+        "-423929771488989675",
+        "60006150429447346439",
+        "-3728316082836397405695"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2613",
+        "8713285",
+        "-12483327927",
+        "9993911404085",
+        "-4828070789596985",
+        "1406611976255520195",
+        "-228677642893586500789",
+        "15993671376282035476951"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 8,
+      "optimal_sum": "1657273117280023046185990",
+      "binary_sum": "1681575784666730607022336",
+      "root": 2,
+      "moments": [
+        "7020",
+        "2427794",
+        "999114122",
+        "440441463092",
+        "201263654158262",
+        "93997448381017004",
+        "44544077032392783302",
+        "21328917323470433022092",
+        "10292325583017636181569062"
+      ],
+      "optimal_expectation": "1657273117280023046185990/511",
+      "binary_expectation": "1681575784666730607022336/511",
+      "saving": "24302667386707560836346/511",
+      "saving_rate": "12151333693353780418173/840787892333365303511168",
+      "polynomial_coefficients": [
+        "7020",
+        "-19422352",
+        "27975195416",
+        "-24664721933152",
+        "14088455791078340",
+        "-5263857109336952224",
+        "1247234156906997932456",
+        "-170631338587763464176736",
+        "10292325583017636181569062"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055",
+        "49103059146497",
+        "20187131975666175",
+        "8572307204206763777",
+        "3728316082836397405695",
+        "1651508097478705817095937"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-8357880",
+        "9549073436",
+        "-7001486299080",
+        "3437214140254790",
+        "-1130479390637305800",
+        "240024601717789385756",
+        "-29826528662691179245560",
+        "1651508097478705817095937"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2923",
+        "11064472",
+        "-18426121980",
+        "17663235634072",
+        "-10651241650823550",
+        "4133377718699646424",
+        "-1007209555189208546700",
+        "140804809925072284931176",
+        "-8640817485538930364473125"
+      ]
+    },
+    {
+      "j": 511,
+      "k": 9,
+      "optimal_sum": "746134541593311334385204349",
+      "binary_sum": "757194956521281002378166272",
+      "root": 1,
+      "moments": [
+        "7885",
+        "2847856",
+        "1205414942",
+        "542498021188",
+        "252001386183398",
+        "119311952511454996",
+        "57207948353823144182",
+        "27677215769452209021268",
+        "13479864033827245460845478",
+        "6599097777908558419460159956"
+      ],
+      "optimal_expectation": "746134541593311334385204349/511",
+      "binary_expectation": "757194956521281002378166272/511",
+      "saving": "11060414927969667992961923/511",
+      "saving_rate": "11060414927969667992961923/757194956521281002378166272",
+      "polynomial_coefficients": [
+        "7885",
+        "-25630704",
+        "43394937912",
+        "-45569833779792",
+        "31752174659108148",
+        "-15033306016443329496",
+        "4805467661721144111288",
+        "-996379767700279524765648",
+        "121318776304445209147609302",
+        "-6599097777908558419460159956"
+      ],
+      "binary_moments": [
+        "4097",
+        "1044735",
+        "341038337",
+        "125026541055",
+        "49103059146497",
+        "20187131975666175",
+        "8572307204206763777",
+        "3728316082836397405695",
+        "1651508097478705817095937",
+        "742196441641409257446908415"
+      ],
+      "binary_polynomial_coefficients": [
+        "4097",
+        "-9402615",
+        "12277380132",
+        "-10502229448620",
+        "6186985452458622",
+        "-2543578628933938050",
+        "720073805153368157268",
+        "-134219378982110306605020",
+        "14863572877308352353863433",
+        "-742196441641409257446908415"
+      ],
+      "saving_polynomial_coefficients": [
+        "-3788",
+        "16228089",
+        "-31117557780",
+        "35067604331172",
+        "-25565189206649526",
+        "12489727387509391446",
+        "-4085393856567775954020",
+        "862160388718169218160628",
+        "-106455203427136856793745869",
+        "5856901336267149162013251541"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 1,
+      "optimal_sum": "4487923",
+      "binary_sum": "4496913",
+      "root": 489,
+      "moments": [
+        "8990",
+        "4502077"
+      ],
+      "optimal_expectation": "4487923/1000",
+      "binary_expectation": "4496913/1000",
+      "saving": "899/100",
+      "saving_rate": "8990/4496913",
+      "polynomial_coefficients": [
+        "8990",
+        "-4502077"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-4490087"
+      ],
+      "saving_polynomial_coefficients": [
+        "-3",
+        "11990"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 2,
+      "optimal_sum": "2852851559",
+      "binary_sum": "2889224941",
+      "root": 1,
+      "moments": [
+        "11023",
+        "6505643",
+        "4841137559"
+      ],
+      "optimal_expectation": "2852851559/1000",
+      "binary_expectation": "2889224941/1000",
+      "saving": "18186691/500",
+      "saving_rate": "36373382/2889224941",
+      "polynomial_coefficients": [
+        "11023",
+        "-13011286",
+        "4841137559"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-8980174",
+        "2882398941"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2036",
+        "4031112",
+        "-1958738618"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 3,
+      "optimal_sum": "2055185005853",
+      "binary_sum": "2085273910527",
+      "root": 3,
+      "moments": [
+        "11643",
+        "7074043",
+        "5363136469",
+        "4455095401147"
+      ],
+      "optimal_expectation": "2055185005853/1000",
+      "binary_expectation": "2085273910527/1000",
+      "saving": "15044452337/500",
+      "saving_rate": "30088904674/2085273910527",
+      "polynomial_coefficients": [
+        "11643",
+        "-21222129",
+        "16089409407",
+        "-4455095401147"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-13470261",
+        "8647196823",
+        "-2078661912473"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2656",
+        "7751868",
+        "-7442212584",
+        "2376433488674"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 4,
+      "optimal_sum": "1589533837416938",
+      "binary_sum": "1611741292725625",
+      "root": 3,
+      "moments": [
+        "12297",
+        "7668214",
+        "5908367470",
+        "4960638234388",
+        "4357737954968938"
+      ],
+      "optimal_expectation": "794766918708469/500",
+      "binary_expectation": "12893930341805/8",
+      "saving": "22207455308687/1000",
+      "saving_rate": "22207455308687/1611741292725625",
+      "polynomial_coefficients": [
+        "12297",
+        "-30672856",
+        "35450204820",
+        "-19842552937552",
+        "4357737954968938"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473",
+        "1605343296617625"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-17960348",
+        "17294393646",
+        "-8314647649892",
+        "1605343296617625"
+      ],
+      "saving_polynomial_coefficients": [
+        "-3310",
+        "12712508",
+        "-18155811174",
+        "11527905287660",
+        "-2752394658351313"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 5,
+      "optimal_sum": "1286325291823681211",
+      "binary_sum": "1303430690503952463",
+      "root": 1,
+      "moments": [
+        "13715",
+        "9011949",
+        "7196599813",
+        "6206217170229",
+        "5568838266314629",
+        "5116947467459463789"
+      ],
+      "optimal_expectation": "1286325291823681211/1000",
+      "binary_expectation": "1303430690503952463/1000",
+      "saving": "4276349670067813/250",
+      "saving_rate": "17105398680271252/1303430690503952463",
+      "polynomial_coefficients": [
+        "13715",
+        "-45059745",
+        "71965998130",
+        "-62062171702290",
+        "27844191331573145",
+        "-5116947467459463789"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473",
+        "1605343296617625",
+        "1297221077854172537"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-22450435",
+        "28823989410",
+        "-20786619124730",
+        "8026716483088125",
+        "-1297221077854172537"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4728",
+        "22609310",
+        "-43142008720",
+        "41275552577560",
+        "-19817474848485020",
+        "3819726389605291252"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 6,
+      "optimal_sum": "1074306284487743017269",
+      "binary_sum": "1088328558594301454161",
+      "root": 1,
+      "moments": [
+        "14435",
+        "9666045",
+        "7799494849",
+        "6768251591955",
+        "6097304604768229",
+        "5617155063484308315",
+        "5251546697970157907269"
+      ],
+      "optimal_expectation": "1074306284487743017269/1000",
+      "binary_expectation": "1088328558594301454161/1000",
+      "saving": "3505568526639609223/250",
+      "saving_rate": "14022274106558436892/1088328558594301454161",
+      "polynomial_coefficients": [
+        "14435",
+        "-57996270",
+        "116992422735",
+        "-135365031839100",
+        "91459569071523435",
+        "-33702930380905849890",
+        "5251546697970157907269"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473",
+        "1605343296617625",
+        "1297221077854172537",
+        "1082281710914961676161"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-26940522",
+        "43235984115",
+        "-41573238249460",
+        "24080149449264375",
+        "-7783326467125035222",
+        "1082281710914961676161"
+      ],
+      "saving_polynomial_coefficients": [
+        "-5448",
+        "31055748",
+        "-73756438620",
+        "93791793589640",
+        "-67379419622259060",
+        "25919603913780814668",
+        "-4169264987055196231108"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 7,
+      "optimal_sum": "918557282307988536715053",
+      "binary_sum": "930426100522132050199287",
+      "root": 1,
+      "moments": [
+        "15088",
+        "10245919",
+        "8325758263",
+        "7253356449067",
+        "6549460083724447",
+        "6042077333967252979",
+        "5653393979646529130263",
+        "5342694297916047816125947"
+      ],
+      "optimal_expectation": "918557282307988536715053/1000",
+      "binary_expectation": "930426100522132050199287/1000",
+      "saving": "5934409107071756742117/500",
+      "saving_rate": "1318757579349279276026/103380677835792450022143",
+      "polynomial_coefficients": [
+        "15088",
+        "-71721433",
+        "174840923523",
+        "-253867475717345",
+        "229231102930355645",
+        "-126883624013312312559",
+        "39573757857525703911841",
+        "-5342694297916047816125947"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473",
+        "1605343296617625",
+        "1297221077854172537",
+        "1082281710914961676161",
+        "924520447006851405927713"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-31430609",
+        "60530377761",
+        "-72753166936555",
+        "56187015381616875",
+        "-27241642634937623277",
+        "7575971976404731733127",
+        "-924520447006851405927713"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6101",
+        "40290824",
+        "-114310545762",
+        "181114308780790",
+        "-173044087548738770",
+        "99641981378374689282",
+        "-31997785881120972178714",
+        "4418173850909196410198234"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 8,
+      "optimal_sum": "799590431121925801681862345",
+      "binary_sum": "809927886699094992540751705",
+      "root": 2,
+      "moments": [
+        "15726",
+        "10802517",
+        "8824463993",
+        "7708303656489",
+        "6969570102451145",
+        "6433368663760564137",
+        "6020173645690052177993",
+        "5688191872113128238054969",
+        "5413150287100932394317614345"
+      ],
+      "optimal_expectation": "159918086224385160336372469/200",
+      "binary_expectation": "161985577339818998508150341/200",
+      "saving": "258436389429229771472234/25",
+      "saving_rate": "2067491115433838171777872/161985577339818998508150341",
+      "polynomial_coefficients": [
+        "15726",
+        "-86420136",
+        "247084991804",
+        "-431665004763384",
+        "487869907171580150",
+        "-360268645170591591672",
+        "168564862079321460983804",
+        "-45505534976905025904439752",
+        "5413150287100932394317614345"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473",
+        "1605343296617625",
+        "1297221077854172537",
+        "1082281710914961676161",
+        "924520447006851405927713",
+        "804145904222891379454455705"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-35920696",
+        "80707170348",
+        "-116405067098488",
+        "112374030763233750",
+        "-72644380359833662072",
+        "30303887905618926932508",
+        "-7396163576054811247421704",
+        "804145904222891379454455705"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6739",
+        "50499440",
+        "-166377821456",
+        "315259937664896",
+        "-375495876408346400",
+        "287624264810757929600",
+        "-138260974173702534051296",
+        "38109371400850214657018048",
+        "-4609004382878041014863158640"
+      ]
+    },
+    {
+      "j": 1000,
+      "k": 9,
+      "optimal_sum": "706002939945892912958060458825",
+      "binary_sum": "715145521319119000656273701823",
+      "root": 2,
+      "moments": [
+        "16348",
+        "11350185",
+        "9320466297",
+        "8165991092367",
+        "7397341789639077",
+        "6836865768506449935",
+        "6403381636664412209517",
+        "6054044861563631384434647",
+        "5763884557649191374995854437",
+        "5517249138299735411785337474175"
+      ],
+      "optimal_expectation": "28240117597835716518322418353/40",
+      "binary_expectation": "715145521319119000656273701823/1000",
+      "saving": "4571290686613043849106621499/500",
+      "saving_rate": "9142581373226087698213242998/715145521319119000656273701823",
+      "polynomial_coefficients": [
+        "16348",
+        "-102151665",
+        "335536786692",
+        "-685943251758828",
+        "932065065494523702",
+        "-861445086831812691810",
+        "537884057479810625599428",
+        "-217945615016290729839647292",
+        "51874961018842722374962689933",
+        "-5517249138299735411785337474175"
+      ],
+      "binary_moments": [
+        "8987",
+        "4490087",
+        "2882398941",
+        "2078661912473",
+        "1605343296617625",
+        "1297221077854172537",
+        "1082281710914961676161",
+        "924520447006851405927713",
+        "804145904222891379454455705",
+        "709473033760043936560159643177"
+      ],
+      "binary_polynomial_coefficients": [
+        "8987",
+        "-40410783",
+        "103766361876",
+        "-174607600647732",
+        "202273255373820750",
+        "-163449855809625739662",
+        "90911663716856780797524",
+        "-33282736092246650613397668",
+        "7237313138006022415090101345",
+        "-709473033760043936560159643177"
+      ],
+      "saving_polynomial_coefficients": [
+        "-7361",
+        "61740882",
+        "-231770424816",
+        "511335651111096",
+        "-729791810120702952",
+        "697995231022186952148",
+        "-446972393762953844801904",
+        "184662878924044079226249624",
+        "-44637647880836699959872588588",
+        "4807776104539691475225177830998"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 1,
+      "optimal_sum": "4717952",
+      "binary_sum": "4719104",
+      "root": 297,
+      "moments": [
+        "9487",
+        "4987249"
+      ],
+      "optimal_expectation": "152192/33",
+      "binary_expectation": "4719104/1023",
+      "saving": "384/341",
+      "saving_rate": "9/36868",
+      "polynomial_coefficients": [
+        "9487",
+        "-4987249"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-4709887"
+      ],
+      "saving_polynomial_coefficients": [
+        "-270",
+        "277362"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 2,
+      "optimal_sum": "3065886520",
+      "binary_sum": "3102445056",
+      "root": 2,
+      "moments": [
+        "11245",
+        "6757099",
+        "5122692469"
+      ],
+      "optimal_expectation": "3065886520/1023",
+      "binary_expectation": "1034148352/341",
+      "saving": "36558536/1023",
+      "saving_rate": "4569817/387805632",
+      "polynomial_coefficients": [
+        "11245",
+        "-13514198",
+        "5122692469"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-9419774",
+        "3093016065"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2028",
+        "4094424",
+        "-2029676404"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 3,
+      "optimal_sum": "2259684839693",
+      "binary_sum": "2291186008064",
+      "root": 3,
+      "moments": [
+        "11919",
+        "7396072",
+        "5729685934",
+        "4864581260962"
+      ],
+      "optimal_expectation": "2259684839693/1023",
+      "binary_expectation": "2291186008064/1023",
+      "saving": "10500389457/341",
+      "saving_rate": "31501168371/2291186008064",
+      "polynomial_coefficients": [
+        "11919",
+        "-22188216",
+        "17189057802",
+        "-4864581260962"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-14129661",
+        "9279048195",
+        "-2281892820991"
+      ],
+      "saving_polynomial_coefficients": [
+        "-2702",
+        "8058555",
+        "-7910009607",
+        "2582688439971"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 4,
+      "optimal_sum": "1788059901533409",
+      "binary_sum": "1811997486629376",
+      "root": 4,
+      "moments": [
+        "12562",
+        "7988131",
+        "6280420929",
+        "5382576002935",
+        "4827860006279649"
+      ],
+      "optimal_expectation": "596019967177803/341",
+      "binary_expectation": "603999162209792/341",
+      "saving": "7979195031989/341",
+      "saving_rate": "7979195031989/603999162209792",
+      "polynomial_coefficients": [
+        "12562",
+        "-31952524",
+        "37682525574",
+        "-21530304011740",
+        "4827860006279649"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991",
+        "1802851338400257"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-18839548",
+        "18558096390",
+        "-9127571283964",
+        "1802851338400257"
+      ],
+      "saving_polynomial_coefficients": [
+        "-3345",
+        "13112976",
+        "-19124429184",
+        "12402732727776",
+        "-3025008667879392"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 5,
+      "optimal_sum": "1480518585294520461",
+      "binary_sum": "1499360753232379904",
+      "root": 1,
+      "moments": [
+        "14001",
+        "9383112",
+        "7649052414",
+        "6737035271088",
+        "6175868374284918",
+        "5798617273928828352"
+      ],
+      "optimal_expectation": "493506195098173487/341",
+      "binary_expectation": "1499360753232379904/1023",
+      "saving": "18842167937859443/1023",
+      "saving_rate": "18842167937859443/1499360753232379904",
+      "polynomial_coefficients": [
+        "14001",
+        "-46915560",
+        "76490524140",
+        "-67370352710880",
+        "30879341871424590",
+        "-5798617273928828352"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991",
+        "1802851338400257",
+        "1490323646658449407"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-23549435",
+        "30930160650",
+        "-22818928209910",
+        "9014256692001285",
+        "-1490323646658449407"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4784",
+        "23366125",
+        "-45560363490",
+        "44551424500970",
+        "-21865085179423305",
+        "4308293627270378945"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 6,
+      "optimal_sum": "1264992560586472695673",
+      "binary_sum": "1280933686107124333056",
+      "root": 1,
+      "moments": [
+        "14746",
+        "10077333",
+        "8305412437",
+        "7364709096171",
+        "6781342050800881",
+        "6386608931981535243",
+        "6104831239149863831977"
+      ],
+      "optimal_expectation": "1264992560586472695673/1023",
+      "binary_expectation": "426977895369041444352/341",
+      "saving": "1449193229150148853/93",
+      "saving_rate": "15941125520651637383/1280933686107124333056",
+      "polynomial_coefficients": [
+        "14746",
+        "-60463998",
+        "124581186555",
+        "-147294181923420",
+        "101720130762013215",
+        "-38319653591889211458",
+        "6104831239149863831977"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991",
+        "1802851338400257",
+        "1490323646658449407",
+        "1271964655772817703425"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-28259322",
+        "46395240975",
+        "-45637856419820",
+        "27042770076003855",
+        "-8941941879950696442",
+        "1271964655772817703425"
+      ],
+      "saving_polynomial_coefficients": [
+        "-5529",
+        "32204676",
+        "-78185945580",
+        "101656325503600",
+        "-74677360686009360",
+        "29377711711938515016",
+        "-4832866583377046128552"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 7,
+      "optimal_sum": "1106550394751027467016734",
+      "binary_sum": "1120445563001734098059264",
+      "root": 1,
+      "moments": [
+        "15445",
+        "10715687",
+        "8900336039",
+        "7927418206523",
+        "7319306516495903",
+        "6905037784216275347",
+        "6607503183573680181959",
+        "6386499479038367636843003"
+      ],
+      "optimal_expectation": "1106550394751027467016734/1023",
+      "binary_expectation": "1120445563001734098059264/1023",
+      "saving": "13895168250706631042530/1023",
+      "saving_rate": "6947584125353315521265/560222781500867049029632",
+      "polynomial_coefficients": [
+        "15445",
+        "-75009809",
+        "186907056819",
+        "-277459637228305",
+        "256175728077356605",
+        "-145005793468541782287",
+        "46252522285015761273713",
+        "-6386499479038367636843003"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991",
+        "1802851338400257",
+        "1490323646658449407",
+        "1271964655772817703425",
+        "1111510450435016467638271"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-32969209",
+        "64953337365",
+        "-79866248734685",
+        "63099796844008995",
+        "-31296796579827437547",
+        "8903752590409723923975",
+        "-1111510450435016467638271"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6228",
+        "42040600",
+        "-121953719454",
+        "197593388493620",
+        "-193075931233347610",
+        "113708996888714344740",
+        "-37348769694606037349738",
+        "5274989028603351169204732"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 8,
+      "optimal_sum": "985469019155937764190089982",
+      "binary_sum": "997912019154044956419826176",
+      "root": 2,
+      "moments": [
+        "16065",
+        "11264531",
+        "9400989039",
+        "8393302243313",
+        "7758609900492675",
+        "7323106955764355441",
+        "7008048828262744787259",
+        "6772227027732968519615273",
+        "6591820487062817940257649795"
+      ],
+      "optimal_expectation": "328489673051979254730029994/341",
+      "binary_expectation": "332637339718014985473275392/341",
+      "saving": "4147666666035730743245398/341",
+      "saving_rate": "2073833333017865371622699/166318669859007492736637696",
+      "polynomial_coefficients": [
+        "16065",
+        "-90116248",
+        "263227693092",
+        "-470024925625528",
+        "543102693034487250",
+        "-410093989522803904696",
+        "196225367191356854043252",
+        "-54177816221863748156922184",
+        "6591820487062817940257649795"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991",
+        "1802851338400257",
+        "1490323646658449407",
+        "1271964655772817703425",
+        "1111510450435016467638271",
+        "988984236955751506581725697"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-37679096",
+        "86604449820",
+        "-127785997975496",
+        "126199593688017990",
+        "-83458124212873166792",
+        "35615010361638895695900",
+        "-8892083603480131741106168",
+        "988984236955751506581725697"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6848",
+        "52437152",
+        "-176623243272",
+        "342238927650032",
+        "-416903099346469260",
+        "326635865309930737904",
+        "-160610356829717958347352",
+        "45285732618383616415816016",
+        "-5602836250107066433675924098"
+      ]
+    },
+    {
+      "j": 1023,
+      "k": 9,
+      "optimal_sum": "890185873573415246082477596229",
+      "binary_sum": "901514632174529662915874914304",
+      "root": 2,
+      "moments": [
+        "16829",
+        "11971278",
+        "10068351426",
+        "9032218984230",
+        "8376205313110746",
+        "7924310125224130998",
+        "7596428098457516656506",
+        "7350459154871518607524950",
+        "7161973756839714550657667706",
+        "7015730945881895376548498427318"
+      ],
+      "optimal_expectation": "296728624524471748694159198743/341",
+      "binary_expectation": "901514632174529662915874914304/1023",
+      "saving": "11328758601114416833397318075/1023",
+      "saving_rate": "11328758601114416833397318075/901514632174529662915874914304",
+      "polynomial_coefficients": [
+        "16829",
+        "-107741502",
+        "362460651336",
+        "-758706394675320",
+        "1055401869451953996",
+        "-998463075778240505748",
+        "638099960270431399146504",
+        "-264616529575374669870898200",
+        "64457763811557430955919009354",
+        "-7015730945881895376548498427318"
+      ],
+      "binary_moments": [
+        "9217",
+        "4709887",
+        "3093016065",
+        "2281892820991",
+        "1802851338400257",
+        "1490323646658449407",
+        "1271964655772817703425",
+        "1111510450435016467638271",
+        "988984236955751506581725697",
+        "892573652632673023309126320127"
+      ],
+      "binary_polynomial_coefficients": [
+        "9217",
+        "-42388983",
+        "111348578340",
+        "-191678996963244",
+        "227159268638432382",
+        "-187780779478964625282",
+        "106845031084916687087700",
+        "-40014376215660592834977756",
+        "8900858132601763559235531273",
+        "-892573652632673023309126320127"
+      ],
+      "saving_polynomial_coefficients": [
+        "-7612",
+        "65352519",
+        "-251112072996",
+        "567027397712076",
+        "-828242600813521614",
+        "810682296299275880466",
+        "-531254929185514712058804",
+        "224602153359714077035920444",
+        "-55556905678955667396683478081",
+        "6123157293249222353239372107191"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 1,
+      "optimal_sum": "19932942",
+      "binary_sum": "19971733",
+      "root": 977,
+      "moments": [
+        "19972",
+        "20011058"
+      ],
+      "optimal_expectation": "9966471/1000",
+      "binary_expectation": "19971733/2000",
+      "saving": "38791/2000",
+      "saving_rate": "38791/19971733",
+      "polynomial_coefficients": [
+        "19972",
+        "-20011058"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-19956267"
+      ],
+      "saving_polynomial_coefficients": [
+        "-8",
+        "54791"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 2,
+      "optimal_sum": "25455359422",
+      "binary_sum": "25750764841",
+      "root": 2,
+      "moments": [
+        "24040",
+        "28029738",
+        "41414311422"
+      ],
+      "optimal_expectation": "12727679711/1000",
+      "binary_expectation": "25750764841/2000",
+      "saving": "295405419/2000",
+      "saving_rate": "295405419/25750764841",
+      "polynomial_coefficients": [
+        "24040",
+        "-56059476",
+        "41414311422"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-39912534",
+        "25719832841"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4076",
+        "16146942",
+        "-15694478581"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 3,
+      "optimal_sum": "36818417186437",
+      "binary_sum": "37307849701255",
+      "root": 5,
+      "moments": [
+        "25277",
+        "30297375",
+        "45578315401",
+        "75298975219563"
+      ],
+      "optimal_expectation": "36818417186437/2000",
+      "binary_expectation": "7461569940251/400",
+      "saving": "244716257409/1000",
+      "saving_rate": "489432514818/37307849701255",
+      "polynomial_coefficients": [
+        "25277",
+        "-90892125",
+        "136734946203",
+        "-75298975219563"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-59868801",
+        "77159498523",
+        "-37247943344745"
+      ],
+      "saving_polynomial_coefficients": [
+        "-5313",
+        "31023324",
+        "-59575447680",
+        "38051031874818"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 4,
+      "optimal_sum": "57141577024519130",
+      "binary_sum": "57866759732063725",
+      "root": 6,
+      "moments": [
+        "26596",
+        "32696108",
+        "49983301086",
+        "83470637459906",
+        "146046906639767130"
+      ],
+      "optimal_expectation": "5714157702451913/200",
+      "binary_expectation": "2314670389282549/80",
+      "saving": "145036541508919/400",
+      "saving_rate": "145036541508919/11573351946412745",
+      "polynomial_coefficients": [
+        "26596",
+        "-130784432",
+        "299899806516",
+        "-333882549839624",
+        "146046906639767130"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745",
+        "57750862306023725"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-79825068",
+        "154318997046",
+        "-148991773378980",
+        "57750862306023725"
+      ],
+      "saving_polynomial_coefficients": [
+        "-6632",
+        "50959364",
+        "-145580809470",
+        "184890776460644",
+        "-88296044333743405"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 5,
+      "optimal_sum": "92753280455088541667",
+      "binary_sum": "93874526925079808263",
+      "root": 2,
+      "moments": [
+        "29414",
+        "38035013",
+        "60216481555",
+        "103252326670205",
+        "184500491957256451",
+        "337924056709275968333"
+      ],
+      "optimal_expectation": "92753280455088541667/2000",
+      "binary_expectation": "93874526925079808263/2000",
+      "saving": "280311617497816649/500",
+      "saving_rate": "1121246469991266596/93874526925079808263",
+      "polynomial_coefficients": [
+        "29414",
+        "-190175065",
+        "602164815550",
+        "-1032523266702050",
+        "922502459786282255",
+        "-337924056709275968333"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745",
+        "57750862306023725",
+        "93649629625357441737"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-99781335",
+        "257198328410",
+        "-372479433447450",
+        "288754311530118625",
+        "-93649629625357441737"
+      ],
+      "saving_polynomial_coefficients": [
+        "-9450",
+        "90393730",
+        "-344966487140",
+        "660043833254600",
+        "-633748148256163630",
+        "244274427083918526596"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 6,
+      "optimal_sum": "155335530272225708937974",
+      "binary_sum": "157178279376318199008421",
+      "root": 2,
+      "moments": [
+        "30851",
+        "40649640",
+        "65046675714",
+        "112282349905038",
+        "201535535481835422",
+        "370285812525932163870",
+        "690873845119366355377974"
+      ],
+      "optimal_expectation": "77667765136112854468987/1000",
+      "binary_expectation": "157178279376318199008421/2000",
+      "saving": "1842749104092490070447/2000",
+      "saving_rate": "1842749104092490070447/157178279376318199008421",
+      "polynomial_coefficients": [
+        "30851",
+        "-243897840",
+        "975700135710",
+        "-2245646998100760",
+        "3023033032227531330",
+        "-2221714875155592983220",
+        "690873845119366355377974"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745",
+        "57750862306023725",
+        "93649629625357441737",
+        "156740413838383999852421"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-119737602",
+        "385797492615",
+        "-744958866894900",
+        "866262934590355875",
+        "-561897777752144650422",
+        "156740413838383999852421"
+      ],
+      "saving_polynomial_coefficients": [
+        "-10887",
+        "124160238",
+        "-589902643095",
+        "1500688131205860",
+        "-2156770097637175455",
+        "1659817097403448332798",
+        "-534133431280982355525553"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 7,
+      "optimal_sum": "266253407988364614084094108",
+      "binary_sum": "269378585474378573468523295",
+      "root": 1,
+      "moments": [
+        "34161",
+        "46971530",
+        "77249080660",
+        "136002721569932",
+        "247870010300963320",
+        "461109257369561221100",
+        "869365099414078182510640",
+        "1654503933393396968664865892"
+      ],
+      "optimal_expectation": "66563351997091153521023527/500",
+      "binary_expectation": "53875717094875714693704659/400",
+      "saving": "3125177486013959384429187/2000",
+      "saving_rate": "3125177486013959384429187/269378585474378573468523295",
+      "polynomial_coefficients": [
+        "34161",
+        "-328800710",
+        "1622230693860",
+        "-4760095254947620",
+        "8675450360533716200",
+        "-9683294404760785643100",
+        "6085555695898547277574480",
+        "-1654503933393396968664865892"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745",
+        "57750862306023725",
+        "93649629625357441737",
+        "156740413838383999852421",
+        "268523545514415318557370705"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-139693869",
+        "540116489661",
+        "-1303678017066075",
+        "2021280180710830375",
+        "-1966642222132506276477",
+        "1097182896868687998966947",
+        "-268523545514415318557370705"
+      ],
+      "saving_polynomial_coefficients": [
+        "-14197",
+        "189106841",
+        "-1082114204199",
+        "3456417237881545",
+        "-6654170179822885825",
+        "7716652182628279366623",
+        "-4988372799029859278607533",
+        "1385980387878981650107495187"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 8,
+      "optimal_sum": "464529498016287571315602827824",
+      "binary_sum": "469979289409760993604773652205",
+      "root": 1,
+      "moments": [
+        "35448",
+        "49226362",
+        "81308991560",
+        "143449914407002",
+        "261704518601421584",
+        "487040760704784417322",
+        "918295496032492814263280",
+        "1747306396388355724331019802",
+        "3347176676569612843380559659824"
+      ],
+      "optimal_expectation": "29033093626017973207225176739/125",
+      "binary_expectation": "93995857881952198720954730441/400",
+      "saving": "5449791393473422289170824381/2000",
+      "saving_rate": "5449791393473422289170824381/469979289409760993604773652205",
+      "polynomial_coefficients": [
+        "35448",
+        "-393810896",
+        "2276651763680",
+        "-8033195206792112",
+        "18319316302099510880",
+        "-27274282599467927370032",
+        "25712273888909798799371840",
+        "-13978451171106845794648158416",
+        "3347176676569612843380559659824"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745",
+        "57750862306023725",
+        "93649629625357441737",
+        "156740413838383999852421",
+        "268523545514415318557370705",
+        "468305387866000005227552932205"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-159650136",
+        "720155319548",
+        "-2085884827305720",
+        "4042560361421660750",
+        "-5244379259020016737272",
+        "4388731587474751995867788",
+        "-2148188364115322548458965640",
+        "468305387866000005227552932205"
+      ],
+      "saving_polynomial_coefficients": [
+        "-15484",
+        "234160760",
+        "-1556496444132",
+        "5947310379486392",
+        "-14276755940677850130",
+        "22029903340447910632760",
+        "-21323542301435046803504052",
+        "11830262806991523246189192776",
+        "-2878871288703612838153006727619"
+      ]
+    },
+    {
+      "j": 2000,
+      "k": 9,
+      "optimal_sum": "821925488334825727790656199916529",
+      "binary_sum": "831573565716008808611556942877783",
+      "root": 1,
+      "moments": [
+        "36690",
+        "51407381",
+        "85240248671",
+        "150659097125543",
+        "275081466571367795",
+        "512073614623260372191",
+        "965439160843896194387891",
+        "1836528904276595411709909023",
+        "3516700057036576770756080654435",
+        "6768129449902930591198648267913471"
+      ],
+      "optimal_expectation": "821925488334825727790656199916529/2000",
+      "binary_expectation": "831573565716008808611556942877783/2000",
+      "saving": "4824038690591540410450371480627/1000",
+      "saving_rate": "9648077381183080820900742961254/831573565716008808611556942877783",
+      "polynomial_coefficients": [
+        "36690",
+        "-462666429",
+        "3068648952156",
+        "-12655364158545612",
+        "34660264787992342170",
+        "-64521275442530806896066",
+        "81096889510887280328582844",
+        "-66115040553957434821556724828",
+        "31650300513329190936804725889915",
+        "-6768129449902930591198648267913471"
+      ],
+      "binary_moments": [
+        "19964",
+        "19956267",
+        "25719832841",
+        "37247943344745",
+        "57750862306023725",
+        "93649629625357441737",
+        "156740413838383999852421",
+        "268523545514415318557370705",
+        "468305387866000005227552932205",
+        "828289596336169972257926316812217"
+      ],
+      "binary_polynomial_coefficients": [
+        "19964",
+        "-179606403",
+        "925913982276",
+        "-3128827240958580",
+        "7276608650558989350",
+        "-11799853332795037658862",
+        "13166194762424255987603364",
+        "-9666847638518951468065345380",
+        "4214748490794000047047976389845",
+        "-828289596336169972257926316812217"
+      ],
+      "saving_polynomial_coefficients": [
+        "-16726",
+        "283060026",
+        "-2142734969880",
+        "9526536917587032",
+        "-27383656137433352820",
+        "52721422109735769237204",
+        "-67930694748463024340979480",
+        "56448192915438483353491379448",
+        "-27435552022535190889756749500070",
+        "5939839853566760618940721951101254"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 1,
+      "optimal_sum": "20967933",
+      "binary_sum": "20972544",
+      "root": 593,
+      "moments": [
+        "21021",
+        "22062054"
+      ],
+      "optimal_expectation": "20967933/2047",
+      "binary_expectation": "20972544/2047",
+      "saving": "4611/2047",
+      "saving_rate": "1537/6990848",
+      "polynomial_coefficients": [
+        "21021",
+        "-22062054"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-20952063"
+      ],
+      "saving_polynomial_coefficients": [
+        "-540",
+        "1109991"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 2,
+      "optimal_sum": "27388305406",
+      "binary_sum": "27680775168",
+      "root": 3,
+      "moments": [
+        "24536",
+        "29144170",
+        "43893569362"
+      ],
+      "optimal_expectation": "27388305406/2047",
+      "binary_expectation": "27680775168/2047",
+      "saving": "292469762/2047",
+      "saving_rate": "146234881/13840387584",
+      "polynomial_coefficients": [
+        "24536",
+        "-58288340",
+        "43893569362"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-41904126",
+        "27638850561"
+      ],
+      "saving_polynomial_coefficients": [
+        "-4055",
+        "16384214",
+        "-16254718801"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 3,
+      "optimal_sum": "40548701063337",
+      "binary_sum": "41052728721408",
+      "root": 6,
+      "moments": [
+        "25888",
+        "31707157",
+        "48761900583",
+        "82369925861251"
+      ],
+      "optimal_expectation": "40548701063337/2047",
+      "binary_expectation": "41052728721408/2047",
+      "saving": "504027658071/2047",
+      "saving_rate": "168009219357/13684242907136",
+      "polynomial_coefficients": [
+        "25888",
+        "-95121471",
+        "146285701749",
+        "-82369925861251"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-62856189",
+        "82916551683",
+        "-40969749293055"
+      ],
+      "saving_polynomial_coefficients": [
+        "-5407",
+        "32265282",
+        "-63369150066",
+        "41400176568196"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 4,
+      "optimal_sum": "64414871248871263",
+      "binary_sum": "65180885746222080",
+      "root": 1,
+      "moments": [
+        "29221",
+        "38266086",
+        "61745351130",
+        "108211789733772",
+        "197927120321019990"
+      ],
+      "optimal_expectation": "2800646576037881/89",
+      "binary_expectation": "65180885746222080/2047",
+      "saving": "766014497350817/2047",
+      "saving_rate": "766014497350817/65180885746222080",
+      "polynomial_coefficients": [
+        "29221",
+        "-153064344",
+        "370472106780",
+        "-432847158935088",
+        "197927120321019990"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055",
+        "65016840832117761"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-83808252",
+        "165833103366",
+        "-163878997172220",
+        "65016840832117761"
+      ],
+      "saving_polynomial_coefficients": [
+        "-8740",
+        "69256092",
+        "-204639003414",
+        "268968161762868",
+        "-132910279488902229"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 5,
+      "optimal_sum": "107033002162011568572",
+      "binary_sum": "108238910520913035264",
+      "root": 2,
+      "moments": [
+        "30048",
+        "39651504",
+        "64117272802",
+        "112345461022782",
+        "205204864866322606",
+        "384273820373595709134"
+      ],
+      "optimal_expectation": "107033002162011568572/2047",
+      "binary_expectation": "108238910520913035264/2047",
+      "saving": "1205908358901466692/2047",
+      "saving_rate": "100492363241788891/9019909210076086272",
+      "polynomial_coefficients": [
+        "30048",
+        "-198257520",
+        "641172728020",
+        "-1123454610227820",
+        "1026024324331613030",
+        "-384273820373595709134"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055",
+        "65016840832117761",
+        "107913416342766229503"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-104760315",
+        "276388505610",
+        "-409697492930550",
+        "325084204160588805",
+        "-107913416342766229503"
+      ],
+      "saving_polynomial_coefficients": [
+        "-9567",
+        "93497205",
+        "-364784222410",
+        "713757117297270",
+        "-700940120171024225",
+        "276360404030829479631"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 6,
+      "optimal_sum": "183470084168169050765959",
+      "binary_sum": "185510597412508522902528",
+      "root": 2,
+      "moments": [
+        "31556",
+        "42467577",
+        "69451501373",
+        "122563410243537",
+        "224945963000665349",
+        "422667105993160958097",
+        "806560461440376756005333"
+      ],
+      "optimal_expectation": "183470084168169050765959/2047",
+      "binary_expectation": "185510597412508522902528/2047",
+      "saving": "2040513244339472136569/2047",
+      "saving_rate": "2040513244339472136569/185510597412508522902528",
+      "polynomial_coefficients": [
+        "31556",
+        "-254805462",
+        "1041772520595",
+        "-2451268204870740",
+        "3374189445009980235",
+        "-2536002635958965748582",
+        "806560461440376756005333"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055",
+        "65016840832117761",
+        "107913416342766229503",
+        "184862140842029749406721"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-125712378",
+        "414582758415",
+        "-819394985861100",
+        "975252612481766415",
+        "-647480498056597377018",
+        "184862140842029749406721"
+      ],
+      "saving_polynomial_coefficients": [
+        "-11075",
+        "129093084",
+        "-627189762180",
+        "1631873219009640",
+        "-2398936832528213820",
+        "1888522137902368371564",
+        "-621698320598347006598612"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 7,
+      "optimal_sum": "321886687050370989549318434",
+      "binary_sum": "325444175534783855972057088",
+      "root": 1,
+      "moments": [
+        "35010",
+        "49232578",
+        "82834324112",
+        "149219149461262",
+        "278289478794297704",
+        "529780307393419852558",
+        "1022184818643394505992472",
+        "1990865789914870088815762702"
+      ],
+      "optimal_expectation": "321886687050370989549318434/2047",
+      "binary_expectation": "325444175534783855972057088/2047",
+      "saving": "3557488484412866422738654/2047",
+      "saving_rate": "1778744242206433211369327/162722087767391927986028544",
+      "polynomial_coefficients": [
+        "35010",
+        "-344628046",
+        "1739520806352",
+        "-5222670231144170",
+        "9740131757800419640",
+        "-11125386455261816903718",
+        "7155293730503761541947304",
+        "-1990865789914870088815762702"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055",
+        "65016840832117761",
+        "107913416342766229503",
+        "184862140842029749406721",
+        "324147872090122498723465215"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-146664441",
+        "580415861781",
+        "-1433941225256925",
+        "2275589429124121635",
+        "-2266181743198090819563",
+        "1294034985894208245847047",
+        "-324147872090122498723465215"
+      ],
+      "saving_polynomial_coefficients": [
+        "-14529",
+        "197963605",
+        "-1159104944571",
+        "3788729005887245",
+        "-7464542328676298005",
+        "8859204712063726084155",
+        "-5861258744609553296100257",
+        "1666717917824747590092297487"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 8,
+      "optimal_sum": "574830365389065157869094236043",
+      "binary_sum": "581201345391774577462581150720",
+      "root": 1,
+      "moments": [
+        "36240",
+        "51412755",
+        "86818970317",
+        "156652276341963",
+        "292346639684947669",
+        "556621671783539979555",
+        "1073803594670625806594077",
+        "2090682874421191982020264443",
+        "4098233767309868838938412346789"
+      ],
+      "optimal_expectation": "574830365389065157869094236043/2047",
+      "binary_expectation": "581201345391774577462581150720/2047",
+      "saving": "6370980002709419593486914677/2047",
+      "saving_rate": "6370980002709419593486914677/581201345391774577462581150720",
+      "polynomial_coefficients": [
+        "36240",
+        "-411302040",
+        "2430931168876",
+        "-8772527475149928",
+        "20464264777946336830",
+        "-31170813619878238855080",
+        "30066500650777522584634156",
+        "-16725462995369535856162115544",
+        "4098233767309868838938412346789"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055",
+        "65016840832117761",
+        "107913416342766229503",
+        "184862140842029749406721",
+        "324147872090122498723465215",
+        "578602980227405231506637081601"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-167616504",
+        "773887815708",
+        "-2294305960411080",
+        "4551178858248243270",
+        "-6043151315194908852168",
+        "5176139943576832983388188",
+        "-2593182976720979989787721720",
+        "578602980227405231506637081601"
+      ],
+      "saving_polynomial_coefficients": [
+        "-15759",
+        "243685536",
+        "-1657043353168",
+        "6478221514738848",
+        "-15913085919698093560",
+        "25127662304683330002912",
+        "-24890360707200689601245968",
+        "14132280018648555866374393824",
+        "-3519630787082463607431775265188"
+      ]
+    },
+    {
+      "j": 2047,
+      "k": 9,
+      "optimal_sum": "1041040372847815672162207894782500",
+      "binary_sum": "1052641724273737723322935393910784",
+      "root": 1,
+      "moments": [
+        "37741",
+        "54179117",
+        "92027766141",
+        "166601627564033",
+        "311542611486490773",
+        "593932171128655179977",
+        "1146732195344383700228061",
+        "2233863687769730139846730433",
+        "4380341967758951735840455371813",
+        "8632742304431537716321499524519097"
+      ],
+      "optimal_expectation": "1041040372847815672162207894782500/2047",
+      "binary_expectation": "1052641724273737723322935393910784/2047",
+      "saving": "11601351425922051160727499128284/2047",
+      "saving_rate": "2900337856480512790181874782071/263160431068434430830733848477696",
+      "polynomial_coefficients": [
+        "37741",
+        "-487612053",
+        "3312999581076",
+        "-13994536715378772",
+        "39254369047297837398",
+        "-74835453562210552677102",
+        "96325504408928230819157124",
+        "-80419092759710285034482295588",
+        "39423077709830565622564098346317",
+        "-8632742304431537716321499524519097"
+      ],
+      "binary_moments": [
+        "20481",
+        "20952063",
+        "27638850561",
+        "40969749293055",
+        "65016840832117761",
+        "107913416342766229503",
+        "184862140842029749406721",
+        "324147872090122498723465215",
+        "578602980227405231506637081601",
+        "1047422612586270715075335145682943"
+      ],
+      "binary_polynomial_coefficients": [
+        "20481",
+        "-188568567",
+        "994998620196",
+        "-3441458940616620",
+        "8192121944846837886",
+        "-13597090459188544917378",
+        "15528419830730498950164564",
+        "-11669323395244409954044747740",
+        "5207426822046647083559733734409",
+        "-1047422612586270715075335145682943"
+      ],
+      "saving_polynomial_coefficients": [
+        "-17260",
+        "299043486",
+        "-2318000960880",
+        "10553077774762152",
+        "-31062247102450999512",
+        "61238363103022007759724",
+        "-80797084578197731868992560",
+        "68749769364465875080437547848",
+        "-34215650887783918539004364611908",
+        "7585319691845267001246164378836154"
+      ]
+    }
+  ]
+}
