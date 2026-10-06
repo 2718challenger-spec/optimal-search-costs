@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "verified_reference_rows": 18423,
+  "exhaustive_tree_enumeration_maximum_j": 8,
+  "cpp_recomputed_maximum_j": 32,
+  "cpp_recomputed_rows": 288,
+  "python_recomputed_examples": [
+    [
+      31,
+      1
+    ]
+  ],
+  "all_large_intervals_recomputed_this_run": false
+}
